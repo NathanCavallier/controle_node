@@ -1,16 +1,16 @@
 // Class pour la création d'une berceuse à partir de l'API de Soundcloud
 export class Lullaby {
-  constructor(songName, artist, id, duration, imageLink, date, isFavorite = false, isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isListened = false) {
+  constructor(songName, artist, id, duration, imageLink, createdDate, modifiedDate, isFavorite = false, isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isListened = false) {
     this.id = id;
     this.songName = songName;
     this.artist = artist;
     this.songLink = `https://api.soundcloud.com/tracks/${id}`;
     this.duration = duration;
-    this.createdDate = date;
+    this.createdDate = createdDate;
+    this.modifiedDate = modifiedDate;
     this.imageLink = imageLink;
 
     this.isFavorite = isFavorite;
-    this.isBookmark = isBookmark;
     this.isHistorique = isHistorique;
     this.isArchive = isArchive;
     this.isStarted = isStarted;
@@ -45,6 +45,12 @@ export class Lullaby {
   }
   getCreatedDate() {
     return this.createdDate;
+  }
+  getModifiedDate() {
+    return this.modifiedDate;
+  }
+  setModifiedDate(date) {
+    this.modifiedDate = date;
   }
   getIsFavorite() {
     return this.isFavorite;
