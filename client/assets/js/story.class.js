@@ -1,6 +1,8 @@
 // Class pour la création d'une histoire
 export class Story {
-  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], currentChapter = 1, id = null, imageLink, date, storyProgression = [], isFavorite = false, isBookmark = false, isHistorique = false, isArchive = false) {
+  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], 
+    currentChapter = 1, id = null, imageLink, date, storyProgression = [], isFavorite = false, 
+    isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isFinished = false) {
     this.id = id;
     this.title = title;
     this.author = author;
@@ -14,6 +16,8 @@ export class Story {
     this.isBookmark = isBookmark;
     this.isHistorique = isHistorique;
     this.isArchive = isArchive;
+    this.isStarted = isStarted;
+    this.isFinished = isFinished;
   }
   getId() {
     return this.id;
@@ -87,6 +91,18 @@ export class Story {
   }
   getIsArchive() {
     return this.isArchive;
+  }
+  setIsStarted(isStarted) {
+    this.isStarted = isStarted;
+  }
+  getIsStarted() {
+    return this.isStarted;
+  }
+  setIsFinished(isFinished) {
+    this.isFinished = isFinished;
+  }
+  getIsFinished() {
+    return this.isFinished;
   }
   toString() {
     return `${this.title} by ${this.author}: ${this.content}`;
