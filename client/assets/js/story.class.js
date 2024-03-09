@@ -1,16 +1,19 @@
 // Class pour la création d'une histoire
 export class Story {
-  constructor(title, author, storyContent, id = null, imageLink, tags, audioLink, audioDuration, favorite = false) {
-    this.imageLink = imageLink;
-    this.tags = tags;
+  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], currentChapter = 1, id = null, imageLink, date, storyProgression = [], isFavorite = false, isBookmark = false, isHistorique = false, isArchive = false) {
     this.id = id;
     this.title = title;
     this.author = author;
+    this.numberOfChapters = numberOfChapters;
+    this.currentChapter = currentChapter;
     this.storyContent = storyContent;
-    this.date = date;
-    this.audioLink = audioLink;
-    this.audioDuration = audioDuration;
-    this.favorite = favorite;
+    this.createdDate = date;
+    this.imageLink = imageLink;
+
+    this.isFavorite = isFavorite;
+    this.isBookmark = isBookmark;
+    this.isHistorique = isHistorique;
+    this.isArchive = isArchive;
   }
   getId() {
     return this.id;
@@ -24,8 +27,23 @@ export class Story {
   getAuthor() {
     return this.author;
   }
-  getContent() {
-    return this.content;
+  getNumberOfChapters() {
+    return this.numberOfChapters;
+  }
+  getCurrentChapter() {
+    return this.currentChapter;
+  }
+  getStoryContent() {
+    return this.storyContent;
+  }
+  setCurrentChapter(currentChapter) {
+    this.currentChapter = currentChapter;
+  }
+  setStoryContent(storyContent) {
+    this.storyContent = storyContent;
+  }
+  setNumberOfChapters(numberOfChapters) {
+    this.numberOfChapters = numberOfChapters;
   }
   setTitle(title) {
     this.title = title;
@@ -33,38 +51,42 @@ export class Story {
   setAuthor(author) {
     this.author = author;
   }
-  setContent(content) {
-    this.content = content;
-  }
   setImageLink(imageLink) {
     this.imageLink = imageLink;
   }
   getImageLink() {
     return this.imageLink;
   }
-  setTags(tags) {
-    this.tags = tags;
+  setCreatedDate(date) {
+    this.createdDate = date;
   }
-  getTags() {
-    return this.tags;
+  getCreatedDate() {
+    return this.createdDate;
   }
-  setAudioLink(audioLink) {
-    this.audioLink = audioLink;
+  
+  setIsFavorite(isFavorite) {
+    this.isFavorite = isFavorite;
   }
-  getAudioLink() {
-    return this.audioLink;
+  getIsFavorite() {
+    return this.isFavorite;
   }
-  setAudioDuration(audioDuration) {
-    this.audioDuration = audioDuration;
+  setIsBookmark(isBookmark) {
+    this.isBookmark = isBookmark;
   }
-  getAudioDuration() {
-    return this.audioDuration;
+  getIsBookmark() {
+    return this.isBookmark;
   }
-  setFavorite(favorite) {
-    this.favorite = favorite;
+  setIsHistorique(isHistorique) {
+    this.isHistorique = isHistorique;
   }
-  getFavorite() {
-    return this.favorite;
+  getIsHistorique() {
+    return this.isHistorique;
+  }
+  setIsArchive(isArchive) {
+    this.isArchive = isArchive;
+  }
+  getIsArchive() {
+    return this.isArchive;
   }
   toString() {
     return `${this.title} by ${this.author}: ${this.content}`;
