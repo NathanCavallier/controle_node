@@ -99,42 +99,41 @@
                 </button>
 
                 <table>
+                    <!--Liste de toutes les histoires-->
                     <tbody id="listStory">
 
                     </tbody>
                     <tr>
-                        <!--Bouton Alice au pays des merveilles-->
                         <button type="button" id="group_19" nameid="Group 19" href="../client/pages/storyReader.html">
                             <div nameid="Group 19" id="_bg__group_19_ek1"></div>
                             <div nameid="Rectangle 5" id="rectangle_5"></div>
-                            <img src="../client/assets/img/alice_au_pays_des_merveilles_1951_62942_1200x675_1.png"
-                                title="Alice au pays des merveilles" />
+                            <img src=${imageLink} id="alice_au_pays_des_merveilles_ek1" title="Alice au pays des merveilles" />
                             <div nameid="bouton_accueil" id="bouton_accueil_ek4"></div>
                             <div nameid="Alice au pays des merveilles" id="alice_au_pays_des_merveilles">
-                                Alice au pays des merveilles
+                                ${title}
                             </div>
-
+                
                             <button type="button" id="solar_play_outline" nameid="solar:play-outline"
                                 href="../client/pages/storyReader.html">
                                 <div nameid="solar:play-outline" id="_bg__solar_play_outline_ek1"></div>
                                 <img src="../client/assets/img/vector_ek5.png" nameid="Vector" id="vector_ek5"
                                     title="Alternate Text" />
-
+                
                             </button>
-
+                
                             <div id="material_symbols_favorite_outline_ek2" nameid="material-symbols:favorite-outline">
                                 <div nameid="material-symbols:favorite-outline"
                                     id="_bg__material_symbols_favorite_outline_ek3">
                                 </div>
                                 <img src="../client/assets/img/vector_ek6.png" nameid="Vector" id="vector_ek6"
                                     title="Alternate Text" />
-
+                
                             </div>
-
+                
                         </button>
                     </tr>
                     <tr>
-                        <!--Bouton Le petit chaperon rouge-->
+                        <!--Bouton pour ajouter une nouvelle histoire-->
                         <button type="button" id="group_11" nameid="Group 11" href="../client/pages/newStory.html">
                             <div nameid="Group 11" id="_bg__group_11_ek1"></div>
                             <div nameid="Rectangle 6" id="rectangle_6"></div>
@@ -144,30 +143,40 @@
                     </tr>
                 </table>
 
-                <!--Bouton Accueil-->
-                <button type="button" id="group_3" nameid="Group 3" href="home.html">
-                    <div nameid="Group 3" id="_bg__group_3_ek1"></div>
-                    <div nameid="bouton_accueil" id="bouton_accueil_ek7"></div>
-                    <div nameid="Accueil" id="accueil_ek3">
-                        Accueil
-                    </div>
+                <header>
+                    <!--Bouton Accueil-->
+                    <button type="button" id="group_3" nameid="Group 3" href="home.html">
+                        <div nameid="Group 3" id="_bg__group_3_ek1"></div>
+                        <div nameid="bouton_accueil" id="bouton_accueil_ek7"></div>
+                        <div nameid="Accueil" id="accueil_ek3">
+                            Accueil
+                        </div>
 
-                </button>
+                    </button>
 
-                <!--Bouton Archives-->
-                <button type="button" id="group_4" nameid="Group 4" href="../client/pages/archives.html">
-                    <div nameid="Group 4" id="_bg__group_4_ek1"></div>
-                    <div nameid="bouton_archive" id="bouton_archive"></div>
-                    <div nameid="Archive" id="archive">
-                        Archives
-                    </div>
+                    <!--Bouton Archives-->
+                    <button type="button" id="group_4" nameid="Group 4" href="../client/pages/archives.html">
+                        <div nameid="Group 4" id="_bg__group_4_ek1"></div>
+                        <div nameid="bouton_archive" id="bouton_archive"></div>
+                        <div nameid="Archive" id="archive">
+                            Archives
+                        </div>
 
-                </button>
-
+                    </button>
+                </header>
             </div>
         </div>
     </article>
     <script>
+        // Changer l'url d'une image en fonction d'une variable booléenne
+        /*
+        var images = document.querySelectorAll("img");
+        for (var i = 0; i < images.length; i++) {
+            images[i].src = "../client/assets/img/" + images[i].nameid + ".png";
+        }
+        */
+
+        // Changer les caractères spéciaux
         var specialChars = document.querySelectorAll("span.char");
         for (var c = 0; c < specialChars.length; c++) {
             specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML);
