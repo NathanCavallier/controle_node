@@ -1,19 +1,7 @@
-
 .accueil,
 .accueil * {
   box-sizing: border-box;
 }
-
-.card {
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  transform: scale(0.98);
-}
-
 .accueil {
   background: #ffffff;
   height: 1024px;
@@ -45,12 +33,10 @@
   top: 600px;
 }
 .rectangle-1 {
-  align-items: left;
   background: rgba(20, 50, 46, 0.66);
   border-radius: 31px;
   width: 1360px;
-  height: 550px;
-  overflow-y: auto;
+  height: 639px;
   position: absolute;
   left: 40px;
   top: 350px;
@@ -67,16 +53,21 @@
   top: 32px;
   -webkit-text-stroke: 1px #ffffff;
 }
-.group-11 {
+.group-48 {
   height: auto;
   position: absolute;
-  left: 1119px;
-  top: 411px;
+  left: 428px;
+  top: 416px;
   overflow: visible;
 }
 .group-14 {
   position: absolute;
   inset: 0;
+}
+.group-42 {
+  width: 180px;
+  height: 57px;
+  position: static;
 }
 .bouton-accueil {
   background: rgba(255, 255, 255, 0.96);
@@ -141,7 +132,7 @@
   position: absolute;
   inset: 0;
 }
-.bouton-accueil3 {
+.bouton-berceuses {
   background: #ffffff;
   border-radius: 31px;
   width: 185px;
@@ -184,7 +175,7 @@
   position: absolute;
   inset: 0;
 }
-.bouton-accueil4 {
+.bouton-accueil3 {
   background: rgba(176, 113, 255, 0.9);
   border-radius: 31px;
   width: 179px;
@@ -212,7 +203,7 @@
   top: 277px;
   overflow: visible;
 }
-.group-19 {
+.group-47 {
   position: absolute;
   inset: 0;
 }
@@ -238,7 +229,7 @@
   top: 388px;
   object-fit: cover;
 }
-.bouton-accueil5 {
+.bouton-accueil4 {
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
@@ -280,189 +271,53 @@
   top: 395px;
   overflow: visible;
 }
-.group-20 {
+.group-37 {
   position: absolute;
   inset: 0;
 }
-.rectangle-52 {
-  background: rgba(246, 246, 246, 0.24);
-  border-radius: 31px;
-  border-style: solid;
-  border-color: #d9d9d9;
-  border-width: 1px;
-  width: 322px;
-  height: 253px;
-  position: absolute;
-  left: 429px;
-  top: 386px;
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.secret-garden-book-27168-1 {
-  border-radius: 31px;
-  width: 319px;
-  height: 232px;
-  position: absolute;
-  left: 431px;
-  top: 388px;
-  object-fit: cover;
-}
-.bouton-accueil6 {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.98) 60.50000190734863%,
-    rgba(255, 255, 255, 0.53) 91.50000214576721%,
-    rgba(255, 255, 255, 0.26) 99.00000095367432%
-  );
-  border-radius: 0px 0px 29px 29px;
-  width: 322px;
-  height: 81px;
-  position: absolute;
-  left: 429px;
-  top: 557px;
-}
-.le-jardin-secret {
-  color: rgba(176, 113, 255, 0.9);
-  text-align: left;
-  font-family: "Judson-Bold", sans-serif;
-  font-size: 30px;
-  line-height: 100%;
-  font-weight: 700;
-  position: absolute;
-  left: 456px;
-  top: 583px;
-}
-.solar-play-outline2 {
-  width: 53px;
-  height: 48px;
-  position: absolute;
-  left: 679px;
-  top: 575px;
-  overflow: visible;
-}
-.material-symbols-favorite-outline3 {
-  width: 47px;
-  height: 47px;
-  position: absolute;
-  left: 682px;
-  top: 395px;
-  overflow: visible;
-}
-.group-21 {
-  position: absolute;
-  inset: 0;
-}
-.rectangle-53 {
-  background: rgba(246, 246, 246, 0.24);
-  border-radius: 31px;
-  border-style: solid;
-  border-color: #d9d9d9;
-  border-width: 1px;
-  width: 322px;
-  height: 253px;
-  position: absolute;
-  left: 774px;
-  top: 388px;
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-._71-ds-1-m-n-08-w-l-1 {
-  border-radius: 31px;
-  width: 319px;
-  height: 244px;
-  position: absolute;
-  left: 775px;
-  top: 388px;
-  object-fit: cover;
-}
-.bouton-accueil7 {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.98) 46.50000035762787%,
-    rgba(255, 255, 255, 0.53) 91.00000262260437%,
-    rgba(255, 255, 255, 0.19) 99.00000095367432%
-  );
-  border-radius: 0px 0px 29px 29px;
-  width: 322px;
-  height: 81px;
-  position: absolute;
-  left: 774px;
-  top: 559px;
-}
-.jane-eyre {
-  color: rgba(176, 113, 255, 0.9);
-  text-align: left;
-  font-family: "Judson-Bold", sans-serif;
-  font-size: 29px;
-  line-height: 100%;
-  font-weight: 700;
-  position: absolute;
-  left: 807px;
-  top: 585px;
-}
-.solar-play-outline3 {
-  width: 53px;
-  height: 48px;
-  position: absolute;
-  left: 1024px;
-  top: 577px;
-  overflow: visible;
-}
-.material-symbols-favorite-outline4 {
-  width: 47px;
-  height: 47px;
-  position: absolute;
-  left: 1027px;
-  top: 397px;
-  overflow: visible;
-}
-.group-3 {
-  position: absolute;
-  inset: 0;
-}
-.bouton-accueil8 {
-  background: rgba(176, 113, 255, 0.9);
-  border-radius: 31px;
-  border-style: solid;
-  border-color: rgba(176, 113, 255, 0.9);
-  border-width: 1px;
-  width: 173px;
-  height: 57px;
-  position: absolute;
-  left: 1034px;
-  top: 39px;
-}
-.accueil2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Itim-Regular", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  position: absolute;
-  left: 1073px;
-  top: 47px;
-  -webkit-text-stroke: 1px rgba(176, 113, 255, 0.9);
-}
-.group-4 {
-  position: absolute;
-  inset: 0;
-}
-.bouton-archive {
+.ellipse-3 {
   background: #ffffff;
-  border-radius: 31px;
-  width: 173px;
-  height: 57px;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
   position: absolute;
-  left: 1227px;
-  top: 39px;
+  left: 1329px;
+  top: 36px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.archive {
-  color: rgba(176, 113, 255, 0.9);
-  text-align: left;
-  font-family: "Itim-Regular", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+.teenyicons-bin-solid {
+  width: 38px;
+  height: 38px;
   position: absolute;
-  left: 1259px;
-  top: 47px;
+  left: 1343px;
+  top: 50px;
+  overflow: visible;
 }
+.group-38 {
+  position: absolute;
+  inset: 0;
+}
+.group-39 {
+  width: 66px;
+  height: 66px;
+  position: static;
+}
+.ellipse-32 {
+  background: rgba(176, 113, 255, 0.9);
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 1230px;
+  top: 36px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.mi-home {
+  width: 49px;
+  height: 47px;
+  position: absolute;
+  left: 1239px;
+  top: 45px;
+  overflow: visible;
+}
+

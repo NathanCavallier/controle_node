@@ -1,0 +1,434 @@
+.page-histoires,
+.page-histoires * {
+  box-sizing: border-box;
+}
+.page-histoires {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.gravity-ui-trash-bin {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 712px;
+  top: 504px;
+  overflow: visible;
+}
+.rectangle-12 {
+  background: #81c050;
+  width: 1450px;
+  height: 512px;
+  position: absolute;
+  left: calc(50% - 725px);
+  top: 600px;
+}
+.background-5-1 {
+  width: 2325px;
+  height: 1554px;
+  position: absolute;
+  left: -885px;
+  top: -499px;
+  object-fit: cover;
+}
+.background-2-1 {
+  width: 1565px;
+  height: 911px;
+  position: absolute;
+  left: -34px;
+  top: 120px;
+  object-fit: cover;
+}
+.rectangle-1 {
+  background: rgba(20, 50, 46, 0.66);
+  border-radius: 31px;
+  width: 1033px;
+  height: 814px;
+  position: absolute;
+  left: 40px;
+  top: 175px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.story-container {
+  border-radius: 31px;
+  width: 990px;
+  height: 622px;
+  position: absolute;
+  left: 59px;
+  top: 269px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.material-symbols-auto-stories-outline {
+  width: 39px;
+  height: 32px;
+  position: absolute;
+  left: 518px;
+  top: 55px;
+  overflow: visible;
+}
+.rectangle-13 {
+  background: rgba(20, 50, 46, 0.73);
+  border-radius: 31px;
+  width: 337px;
+  height: 495px;
+  position: absolute;
+  left: 1087px;
+  top: 176px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.rectangle-16 {
+  background: rgba(20, 50, 46, 0.66);
+  border-radius: 31px;
+  width: 337px;
+  height: 298px;
+  position: absolute;
+  left: 1089px;
+  top: 692px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.rectangle-18 {
+  border-radius: 31px 31px 0px 0px;
+  width: 331px;
+  height: 205px;
+  position: absolute;
+  left: 1092px;
+  top: 700px;
+}
+.rectangle-14 {
+  background: rgba(217, 217, 217, 0.48);
+  border-radius: 31px 31px 0px 0px;
+  width: 337px;
+  height: 82px;
+  position: absolute;
+  left: 1087px;
+  top: 176px;
+}
+.rectangle-17 {
+  background: rgba(217, 217, 217, 0.48);
+  border-radius: 31px 31px 0px 0px;
+  width: 337px;
+  height: 82px;
+  position: absolute;
+  left: 1426px;
+  top: 990px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.rectangle-15 {
+  background: #ffffff;
+  border-radius: 31px 31px 0px 0px;
+  width: 1032px;
+  height: 89px;
+  position: absolute;
+  left: 1072px;
+  top: 990px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.bouton-histoires-page {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 31px;
+  width: 173px;
+  height: 57px;
+  position: absolute;
+  left: 503px;
+  top: 43px;
+}
+.histoires {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  position: absolute;
+  left: 563px;
+  top: 56px;
+}
+.chapitres {
+  color: #f5f5f5;
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1172px;
+  top: 193px;
+}
+.c-lins-du-soir {
+  color: rgba(255, 255, 255, 0.98);
+  text-align: left;
+  font-family: "Coiny-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 40px;
+  top: 32px;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.alice-au-pays-des-merveilles-1951-62942-1200-x-675-1 {
+  border-radius: 31px 0px 0px 0px;
+  width: 316px;
+  height: 86px;
+  position: absolute;
+  left: 40px;
+  top: 175px;
+  object-fit: cover;
+}
+.bouton-accueil {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.85) 4.899963364005089%,
+    rgba(255, 255, 255, 1) 9.399963170289993%,
+    rgba(255, 255, 255, 1) 31.899964809417725%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 0px 29px 0px 0px;
+  width: 788px;
+  height: 86px;
+  position: absolute;
+  left: 284px;
+  top: 175px;
+}
+.chapitre-1-down-the-rabbit-hole {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Judson-Italic", sans-serif;
+  font-size: 31px;
+  line-height: 100%;
+  font-weight: 400;
+  font-style: true;
+  position: absolute;
+  left: 343px;
+  top: 186px;
+  width: 510px;
+}
+.down-the-rabbit-hole {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Judson-Italic", sans-serif;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: 400;
+  font-style: true;
+  position: absolute;
+  left: 1150px;
+  top: 292px;
+  width: 248px;
+}
+.alice-au-pays-des-merveilles {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Judson-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 700;
+  position: absolute;
+  left: 368px;
+  top: 929px;
+  width: 510px;
+}
+.material-symbols-favorite-outline {
+  width: 63px;
+  height: 61px;
+  position: absolute;
+  left: 786px;
+  top: 189px;
+  overflow: visible;
+}
+.tabler-bookmark-filled {
+  width: 3.82%;
+  height: 5.57%;
+  position: absolute;
+  right: 46.46%;
+  left: 49.72%;
+  bottom: 75.78%;
+  top: 18.65%;
+  overflow: visible;
+}
+.group-24 {
+  height: auto;
+  position: absolute;
+  left: 59px;
+  top: 920px;
+  overflow: visible;
+}
+.group-25 {
+  height: auto;
+  position: absolute;
+  left: 988px;
+  top: 920px;
+  overflow: visible;
+}
+.group-26 {
+  height: auto;
+  position: absolute;
+  left: 988px;
+  top: 920px;
+  overflow: visible;
+}
+.bouton-accueil2 {
+  background: rgba(217, 217, 217, 0.79);
+  border-radius: 31px;
+  width: 74px;
+  height: 63px;
+  position: absolute;
+  left: 1225px;
+  top: 917px;
+}
+.line-3 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px 0 0 0;
+  width: 266px;
+  height: 0px;
+  position: absolute;
+  left: 1146.99px;
+  top: 338.5px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.tabler-bookmark {
+  width: 57px;
+  height: 61px;
+  position: absolute;
+  left: 862px;
+  top: 187px;
+  overflow: visible;
+}
+.gravity-ui-trash-bin2 {
+  width: 59px;
+  height: 56px;
+  position: absolute;
+  left: 1000px;
+  top: 189px;
+  overflow: visible;
+}
+.mdi-play-pause {
+  width: 52px;
+  height: 48px;
+  position: absolute;
+  left: 1238px;
+  top: 924px;
+  overflow: visible;
+}
+.group-27 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-2 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  left: 1097px;
+  top: 284px;
+}
+._1 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Judson-Bold", sans-serif;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+  position: absolute;
+  left: 1110px;
+  top: 289px;
+}
+.group-37 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-3 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 1347px;
+  top: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.teenyicons-bin-solid {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: 1361px;
+  top: 46px;
+  overflow: visible;
+}
+.group-38 {
+  position: absolute;
+  inset: 0;
+}
+.group-39 {
+  width: 66px;
+  height: 66px;
+  position: static;
+}
+.group-40 {
+  width: 66px;
+  height: 66px;
+  position: static;
+}
+.ellipse-32 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 1260px;
+  top: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.mi-home {
+  width: 49px;
+  height: 47px;
+  position: absolute;
+  left: 1269px;
+  top: 41px;
+  overflow: visible;
+}
+.vector {
+  width: 3.54%;
+  height: 3.42%;
+  position: absolute;
+  right: 16.81%;
+  left: 79.65%;
+  bottom: 5.47%;
+  top: 91.11%;
+  overflow: visible;
+}
+.vector2 {
+  width: 3.54%;
+  height: 3.42%;
+  position: absolute;
+  right: 0.96%;
+  left: 95.49%;
+  bottom: 2.17%;
+  top: 94.42%;
+  transform: translate(-51.22px, -34.83px);
+  overflow: visible;
+}
+.story-container2 {
+  background: rgba(20, 50, 46, 0.42);
+  border-radius: 31px;
+  width: 1006px;
+  height: 607px;
+  position: absolute;
+  left: 51px;
+  top: 281px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.basil-edit-outline {
+  width: 59px;
+  height: 54px;
+  position: absolute;
+  left: 926px;
+  top: 191px;
+  overflow: visible;
+}

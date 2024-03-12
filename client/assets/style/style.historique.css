@@ -1,0 +1,584 @@
+.page-historique,
+.page-historique * {
+  box-sizing: border-box;
+}
+.page-historique {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.background-5-1 {
+  width: 2325px;
+  height: 1147px;
+  position: absolute;
+  left: -885px;
+  top: -499px;
+  object-fit: cover;
+}
+.background-2-1 {
+  width: 1568px;
+  height: 911px;
+  position: absolute;
+  left: 0px;
+  top: -311px;
+  object-fit: cover;
+}
+.rectangle-12 {
+  background: #81c050;
+  width: 1450px;
+  height: 512px;
+  position: absolute;
+  left: calc(50% - 725px);
+  top: 600px;
+}
+.rectangle-1 {
+  background: rgba(88, 54, 130, 0.43);
+  border-radius: 31px;
+  width: 1342px;
+  height: 639px;
+  position: absolute;
+  left: 51px;
+  top: 352px;
+  box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
+}
+.group-52 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-17 {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 31px 31px 0px 0px;
+  width: 1342px;
+  height: 75px;
+  position: absolute;
+  left: 51px;
+  top: 352px;
+}
+.line-5 {
+  width: 52.01px;
+  height: 0px;
+  position: absolute;
+  left: 720.93px;
+  top: 363px;
+  transform: translate(-1.5px, -1.5px);
+  overflow: visible;
+}
+.group-54 {
+  width: 181.29px;
+  height: 38px;
+  position: static;
+}
+.histoires {
+  color: #a2a2a2;
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 400;
+  position: absolute;
+  left: 310.55px;
+  top: 369px;
+  width: 124.74px;
+}
+.material-symbols-auto-stories-outline {
+  width: 49px;
+  height: 38px;
+  position: absolute;
+  left: 254px;
+  top: 366px;
+  overflow: visible;
+}
+.group-53 {
+  width: 188.39px;
+  height: 40px;
+  position: static;
+}
+.berceuses {
+  color: #a2a2a2;
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 400;
+  position: absolute;
+  left: 981.55px;
+  top: 369px;
+  width: 141.85px;
+}
+.mingcute-music-3-line {
+  width: 42px;
+  height: 40px;
+  position: absolute;
+  left: 935px;
+  top: 367px;
+  overflow: hidden;
+}
+.group {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.rectangle-21 {
+  background: rgba(88, 54, 130, 0);
+  border-radius: 31px;
+  width: 956px;
+  height: 606px;
+  position: absolute;
+  left: 60px;
+  top: 366px;
+}
+.c-lins-du-soir {
+  color: rgba(255, 255, 255, 0.98);
+  text-align: left;
+  font-family: "Coiny-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 40px;
+  top: 32px;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.group-14 {
+  position: absolute;
+  inset: 0;
+}
+.bouton-accueil {
+  background: rgba(176, 113, 255, 0.9);
+  border-radius: 31px;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: 1220px;
+  top: 269px;
+}
+.historique {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 1267px;
+  top: 278px;
+}
+.mdi-recent {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 1228px;
+  top: 279px;
+  overflow: visible;
+}
+.mdi-recent2 {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 538px;
+  top: 51px;
+  overflow: visible;
+}
+.group-32 {
+  position: absolute;
+  inset: 0;
+}
+.bouton-accueil2 {
+  background: #ffffff;
+  border-radius: 31px;
+  width: 173px;
+  height: 57px;
+  position: absolute;
+  left: 1034px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.favoris {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 1102px;
+  top: 278px;
+}
+.material-symbols-favorite-outline {
+  width: 46px;
+  height: 41px;
+  position: absolute;
+  left: 1047px;
+  top: 279px;
+  overflow: visible;
+}
+.group-45 {
+  position: absolute;
+  inset: 0;
+}
+.bouton-accueil3 {
+  background: #ffffff;
+  border-radius: 31px;
+  width: 185px;
+  height: 57px;
+  position: absolute;
+  left: 836px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.berceuses2 {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: center;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 877px;
+  top: 277px;
+  width: 143px;
+}
+.mingcute-music-3-line2 {
+  width: 42px;
+  height: 40px;
+  position: absolute;
+  left: 842px;
+  top: 277px;
+  overflow: hidden;
+}
+.group2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.mingcute-music-3-line3 {
+  width: 42px;
+  height: 40px;
+  position: absolute;
+  left: 91px;
+  top: 413px;
+  overflow: hidden;
+}
+.group3 {
+  width: 132.14%;
+  height: 361.67%;
+  position: absolute;
+  right: -32.14%;
+  left: 0%;
+  bottom: -261.67%;
+  top: 0%;
+  overflow: visible;
+}
+.group-34 {
+  position: absolute;
+  inset: 0;
+}
+.bouton-accueil4 {
+  background: #ffffff;
+  border-radius: 31px;
+  width: 179px;
+  height: 57px;
+  position: absolute;
+  left: 637px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.histoires2 {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  left: 701px;
+  top: 279px;
+}
+.material-symbols-auto-stories-outline2 {
+  width: 49px;
+  height: 38px;
+  position: absolute;
+  left: 647px;
+  top: 277px;
+  overflow: visible;
+}
+.rectangle-16 {
+  border-radius: 46px;
+  border-style: solid;
+  border-color: #a2a2a2;
+  border-width: 1px;
+  width: 639px;
+  height: 519px;
+  position: absolute;
+  left: 62px;
+  top: 455px;
+}
+.rectangle-22 {
+  border-radius: 46px;
+  border-style: solid;
+  border-color: #a2a2a2;
+  border-width: 1px;
+  width: 640px;
+  height: 519px;
+  position: absolute;
+  left: 734px;
+  top: 455px;
+}
+.group-37 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-3 {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 1334px;
+  top: 19px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.teenyicons-bin-solid {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: 1348px;
+  top: 33px;
+  overflow: visible;
+}
+.group-38 {
+  position: absolute;
+  inset: 0;
+}
+.group-39 {
+  width: 66px;
+  height: 66px;
+  position: static;
+}
+.ellipse-32 {
+  background: rgba(176, 113, 255, 0.9);
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 1235px;
+  top: 19px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.mi-home {
+  width: 49px;
+  height: 47px;
+  position: absolute;
+  left: 1244px;
+  top: 28px;
+  overflow: visible;
+}
+.group-56 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-5 {
+  background: rgba(246, 246, 246, 0.24);
+  border-radius: 46px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.98);
+  border-width: 1px;
+  width: 608px;
+  height: 76px;
+  position: absolute;
+  left: 744px;
+  top: 465px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bouton-accueil5 {
+  background: #ffffff;
+  border-radius: 0px 46px 46px 0px;
+  width: 528px;
+  height: 76px;
+  position: absolute;
+  left: 824px;
+  top: 465px;
+}
+.titre-du-morceau {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Judson-Regular", sans-serif;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: 400;
+  position: absolute;
+  left: 833px;
+  top: 487px;
+  width: 261.68px;
+}
+.material-symbols-light-favorite-outline {
+  width: 45.72px;
+  height: 43px;
+  position: absolute;
+  left: 1176.9px;
+  top: 484px;
+  overflow: visible;
+}
+.teenyicons-bin-outline {
+  width: 36.97px;
+  height: 39px;
+  position: absolute;
+  left: 1295.58px;
+  top: 482px;
+  overflow: visible;
+}
+.humbleicons-download {
+  width: 58.37px;
+  height: 52px;
+  position: absolute;
+  left: 1229.43px;
+  top: 477px;
+  overflow: visible;
+}
+.ic-baseline-favorite {
+  width: 44.75px;
+  height: 43px;
+  position: absolute;
+  left: 1132.15px;
+  top: 482px;
+  overflow: visible;
+}
+.mingcute-download-3-fill {
+  width: 51.56px;
+  height: 43px;
+  position: absolute;
+  left: 1084.48px;
+  top: 483px;
+  overflow: hidden;
+}
+.group4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.vector {
+  width: 2.5%;
+  height: 3.52%;
+  position: absolute;
+  right: 44.44%;
+  left: 53.06%;
+  bottom: 49.02%;
+  top: 47.46%;
+  overflow: visible;
+}
+.group-55 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-52 {
+  background: rgba(246, 246, 246, 0.24);
+  border-radius: 46px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.98);
+  border-width: 1px;
+  width: 608px;
+  height: 76px;
+  position: absolute;
+  left: 70px;
+  top: 464px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bouton-accueil6 {
+  background: #ffffff;
+  border-radius: 0px 46px 46px 0px;
+  width: 540.44px;
+  height: 76px;
+  position: absolute;
+  left: 137.56px;
+  top: 464px;
+}
+.titre-de-l-histoire {
+  color: rgba(176, 113, 255, 0.9);
+  text-align: left;
+  font-family: "Judson-Regular", sans-serif;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: 400;
+  position: absolute;
+  left: 146px;
+  top: 491px;
+  width: 261.68px;
+}
+.material-symbols-light-favorite-outline2 {
+  width: 45.72px;
+  height: 43px;
+  position: absolute;
+  left: 502.9px;
+  top: 483px;
+  overflow: visible;
+}
+.teenyicons-bin-outline2 {
+  width: 36.97px;
+  height: 39px;
+  position: absolute;
+  left: 621.58px;
+  top: 481px;
+  overflow: visible;
+}
+.humbleicons-download2 {
+  width: 58.37px;
+  height: 52px;
+  position: absolute;
+  left: 555.43px;
+  top: 476px;
+  overflow: visible;
+}
+.ic-baseline-favorite2 {
+  width: 44.75px;
+  height: 43px;
+  position: absolute;
+  left: 458.15px;
+  top: 481px;
+  overflow: visible;
+}
+.mingcute-download-3-fill2 {
+  width: 51.56px;
+  height: 43px;
+  position: absolute;
+  left: 410.48px;
+  top: 482px;
+  overflow: hidden;
+}
+.group5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.material-symbols-auto-stories-outline3 {
+  width: 49px;
+  height: 38px;
+  position: absolute;
+  left: 81px;
+  top: 482px;
+  overflow: visible;
+}
+.bouton-histoires-page {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 31px;
+  width: 78px;
+  height: 57px;
+  position: absolute;
+  left: 517px;
+  top: 42px;
+}
