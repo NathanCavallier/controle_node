@@ -1,5 +1,3 @@
-
-
 export default function handleDrop(event) {
     event.preventDefault();
     const file = event.dataTransfer.files[0];

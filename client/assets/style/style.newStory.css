@@ -504,7 +504,7 @@
   left: 1162px;
   top: 924px;
 }
-.enregistrer {
+#enregistrer {
   color: rgba(96, 122, 255, 0.9);
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
@@ -538,7 +538,7 @@
   left: 980px;
   top: 925px;
 }
-.annuler {
+#annuler {
   color: rgba(255, 112, 112, 0.9);
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
