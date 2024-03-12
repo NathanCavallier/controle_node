@@ -2,6 +2,10 @@
 .accueil * {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
 .accueil {
   background: #ffffff;
   height: 1024px;
