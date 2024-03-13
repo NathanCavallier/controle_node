@@ -1,4 +1,4 @@
-import app from './config/express';
+import app from './server/config/express';
 import mongoose from 'mongoose';
 
 const uri = 'mongodb+srv://Nathan@admin:mtS9FNYHPvDnSYo8@nathan-hosanna-cluster0.mjqouc7.mongodb.net/?retryWrites=true&w=majority&appName=Nathan-Hosanna-Cluster0';
