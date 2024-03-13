@@ -417,6 +417,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1348px;
   top: 33px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-38 {
   position: absolute;
@@ -444,6 +445,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1244px;
   top: 28px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-56 {
   position: absolute;

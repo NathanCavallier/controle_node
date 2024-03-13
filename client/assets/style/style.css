@@ -307,10 +307,10 @@ background: #E8E8E8; /* Couleur de la poignée */
   );
   border-radius: 0px 0px 29px 29px;
   width: 322px;
-  height: 81px;
+  height: 75px;
   position: absolute;
   left: 75px;
-  top: 557px;
+  top: 565px;
 }
 .alice-au-pays-des-merveilles {
   color: rgba(176, 113, 255, 0.9);
@@ -388,5 +388,6 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1239px;
   top: 45px;
   overflow: visible;
+  cursor: pointer;
 }
 

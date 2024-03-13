@@ -334,6 +334,7 @@ a {
   left: 920px;
   top: 405px;
   overflow: visible;
+  cursor: pointer;
 }
 .humbleicons-download {
   width: 74px;
@@ -476,6 +477,7 @@ a {
   left: 1348px;
   top: 33px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-38 {
   position: absolute;
@@ -503,6 +505,7 @@ a {
   left: 1244px;
   top: 28px;
   overflow: visible;
+  cursor: pointer;
 }
 .bouton-histoires-page {
   background: rgba(255, 255, 255, 0.35);

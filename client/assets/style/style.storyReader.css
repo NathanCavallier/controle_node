@@ -29,22 +29,8 @@ a {
   left: calc(50% - 725px);
   top: 600px;
 }
-.background-5-1 {
-  width: 2325px;
-  height: 1554px;
-  position: absolute;
-  left: -885px;
-  top: -499px;
-  object-fit: cover;
-}
-.background-2-1 {
-  width: 1565px;
-  height: 911px;
-  position: absolute;
-  left: -34px;
-  top: 120px;
-  object-fit: cover;
-}
+
+
 .rectangle-1 {
   background: rgba(20, 50, 46, 0.66);
   border-radius: 31px;
@@ -301,6 +287,7 @@ a {
   left: 862px;
   top: 187px;
   overflow: visible;
+  cursor: pointer;
 }
 .gravity-ui-trash-bin2 {
   width: 59px;
@@ -309,6 +296,7 @@ a {
   left: 1000px;
   top: 189px;
   overflow: visible;
+  cursor: pointer;
 }
 .mdi-play-pause {
   width: 52px;
@@ -317,6 +305,7 @@ a {
   left: 1238px;
   top: 924px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-27 {
   position: absolute;
@@ -365,6 +354,7 @@ a {
   left: 1361px;
   top: 46px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-38 {
   position: absolute;
@@ -397,6 +387,7 @@ a {
   left: 1269px;
   top: 41px;
   overflow: visible;
+  cursor: pointer;
 }
 .vector {
   width: 3.54%;

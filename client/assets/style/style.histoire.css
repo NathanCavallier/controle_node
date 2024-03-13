@@ -365,6 +365,7 @@ a {
   left: 1361px;
   top: 46px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-38 {
   position: absolute;
@@ -397,6 +398,7 @@ a {
   left: 1269px;
   top: 41px;
   overflow: visible;
+  cursor: pointer;
 }
 .vector {
   width: 3.54%;
