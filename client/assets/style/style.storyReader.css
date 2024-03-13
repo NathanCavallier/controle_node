@@ -3,16 +3,60 @@
   box-sizing: border-box;
 }
 
+
+h1, h2, h3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+p {
+  font-family: fantasy;
+}
+
+html, body {
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #33BDBD;
+  background-image: url('../img/background-castle-and-moon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.box-clicable {
+	cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
 
-.page-histoires {
-  background: #ffffff;
-  height: 1024px;
-  position: relative;
-  overflow: hidden;
+#main-group-scroll {
+  min-height: 400px; 
+  overflow-y: auto; 
+  white-space: nowrap; 
 }
+
+#main-group-scroll::-webkit-scrollbar {
+width: 8px; 
+}
+
+#main-group-scroll::-webkit-scrollbar-thumb {
+width: 8px; 
+}
+
+#main-group-scroll::-webkit-scrollbar-thumb {
+background: #f0f0f0; 
+border-radius: 6px; 
+width: 8px; 
+}
+
+#main-group-scroll:hover #main-group-scroll::-webkit-scrollbar {
+background: #E8E8E8; /* Couleur de la poignée */
+}
+
+
 .gravity-ui-trash-bin {
   width: 16px;
   height: 16px;

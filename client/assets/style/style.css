@@ -27,12 +27,8 @@ html, body {
 }
 .box-clicable {
 	cursor: pointer;
-	transition: transform 0.3s ease;
 }
 
-.box-clicable:hover {
-	transform: scale(0.98); 
-}
 a {
   text-decoration: none;
 }
@@ -118,6 +114,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 1220px;
   top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .historique {
   margin-left: -15%;
