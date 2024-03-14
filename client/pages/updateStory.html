@@ -14,10 +14,7 @@
 
 <body>
     <article>
-        <div class="page-nouvelle-histoire">
-            <img class="background-5-1" src="../assets/img/background5_1.png" alt="" />
-            <img class="background-2-1" src="../assets/img/background2_1.png" alt="" />
-            <div class="rectangle-12"></div>
+        <div>
             <div class="rectangle-1"></div>
             <div class="c-lins-du-soir">Câlins du soir</div>
             <div class="teenyicons-bin-outline"></div>
@@ -38,7 +35,7 @@
                 </defs>
             </svg>
 
-            <a href="../home.html">
+            <div onclick='window.location.href="../home.html"'>
                 <div class="group-39">
                     <a class="ellipse-32"></a>
                     <svg class="mi-home" width="49" height="47" viewBox="0 0 49 47" fill="none"
@@ -48,7 +45,7 @@
                             fill="#B071FF" fill-opacity="0.9" />
                     </svg>
                 </div>
-            </a>
+            </div>
             <svg class="line-4" width="524.040283203125" height="0"></svg>
             <div class="rectangle-17"></div>
             <svg class="material-symbols-auto-stories-outline" width="49" height="38" viewBox="0 0 49 38" fill="none"
@@ -74,9 +71,6 @@
             <a class="rectangle-6">
                 <div id="dropzone" class="rectangle-6" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
                     <div>
-                        {imageLoaded ? (
-                        <img src={imageSrc} alt="Photo de l’histoire" />
-                        ) : (
                         <svg class="union" width="121" height="123" viewBox="0 0 121 123" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -84,33 +78,26 @@
                                 fill="#D9D9D9" fill-opacity="0.48" />
                         </svg>
                         <div class="photo-de-l-histoire">Photo de l’histoire</div>
-                        )}
                     </div>
                 </div>
             </a>
             <div class="rectangle-19"></div>
-            <label for="titre-input">Titre:</label>
-            <input id="titre-input" class="titre" value="Titre...." placeholder="saisir le titre..." />
+            <input id="titre-input" class="titre" placeholder="Saisir le titre de l'histoire..." />
 
             <div class="rectangle-21"></div>
-            <label for="nbr-chapitre">Nombre de chapitre:</label>
-            <input id="nbr-chapitre" class="nbr-chapitre" value="Nombre de chapitre..." />
+            <input id="nbr-chapitre" class="nbr-chapitre" placeholder="Nombre de chapitre..." />
 
             <div class="rectangle-212"></div>
-            <label for="annee-parution">Année de parution:</label>
             <input id="annee-parution" class="ann-e" placeholder="Année de parution..." />
 
             <div class="rectangle-20"></div>
-            <label for="auteur">Nom de l’auteur:</label>
             <input id="auteur" class="auteur" placeholder="Nom de l’auteur..." />
 
             <div class="rectangle-202"></div>
-            <label for="editeur">Editeur:</label>
             <input id="editeur" class="editeur" placeholder="Editeur..." />
 
             <div class="rectangle-22"></div>
             <div class="rectangle-213"></div>
-            <label for="description">Description de l’histoire:</label>
             <textarea id="description" class="description-de-l-histoire" placeholder="Description de l’histoire...."></textarea>
             
             <div class="group-42">
@@ -141,7 +128,6 @@
             </div>
             <div class="group-72">
                 <div class="rectangle-24"></div>
-                <label for="titre" class="titre-de-l-histoire">Titre de l’histoire.....</label>
                 <input id="titre" class="titre-de-l-histoire" placeholder="Titre de l’histoire....." />
             </div>
             <svg class="carbon-add-filled2" width="53" height="54" viewBox="0 0 53 54" fill="none"
