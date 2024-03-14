@@ -57,14 +57,7 @@ width: 8px;
 background: #E8E8E8; /* Couleur de la poignée */
 }
 
-.rectangle-12 {
-  background: #81c050;
-  width: 70%;
-  height: 150%-512px;
-  position: static;
-  left: calc(50% - 725px);
-  top: 600px;
-}
+
 .rectangle-1 {
   margin-top: 20%;
   background: rgba(20, 50, 46, 0.66);
