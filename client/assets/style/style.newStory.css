@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+article {
+  align-items:first baseline;
+}
+
 h1, h2, h3 {
   font-family: 'Indie Flower', cursive;
 }
@@ -261,7 +265,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .photo-de-l-histoire {
-  color: rgba(162, 162, 162, 0.97);
+  color: #a2a2a2;
   text-align: center;
   font-family: "Itim-Regular", sans-serif;
   font-size: 18px;
@@ -322,7 +326,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   border-style: solid;
   border-color: #a2a2a2;
   border-width: 1px;
-  width: 232.35px;
+  width: 235px;
   height: 47px;
   position: absolute;
   left: 70px;
@@ -337,7 +341,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 89px;
   top: 567px;
-  width: 189px;
+  width: 200px;
 }
 .nombre-de-chapitre {
   color: #d9d9d9;
@@ -659,15 +663,15 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 309px;
 }
 .chapitre-1 {
-  color: #33bdbd;
+  color: #d7d7d7;
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 100%;
   font-weight: 400;
   position: absolute;
-  left: 696px;
-  top: 323px;
+  left: 41.5%;
+  top: 33%;
 }
 .group-72 {
   width: 466px;

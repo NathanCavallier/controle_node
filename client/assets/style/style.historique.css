@@ -32,9 +32,6 @@ html, body {
 	transition: transform 0.3s ease;
 }
 
-.box-clicable:hover {
-	transform: scale(0.98); 
-}
 a {
   text-decoration: none;
 }
@@ -232,6 +229,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 1267px;
   top: 278px;
+  cursor: pointer;
 }
 .mdi-recent {
   width: 36px;
@@ -240,6 +238,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1228px;
   top: 279px;
   overflow: visible;
+  cursor: pointer;
 }
 .mdi-recent2 {
   width: 36px;
@@ -248,6 +247,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 538px;
   top: 51px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-32 {
   position: absolute;
@@ -272,6 +272,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 1102px;
   top: 278px;
+  cursor: pointer;
 }
 .material-symbols-favorite-outline {
   width: 46px;
@@ -280,6 +281,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1047px;
   top: 279px;
   overflow: visible;
+  cursor: pointer;
 }
 .group-45 {
   position: absolute;
@@ -328,7 +330,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 42px;
   height: 40px;
   position: absolute;
-  left: 91px;
+  left: 50px;
   top: 413px;
   overflow: hidden;
 }
@@ -356,6 +358,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.bouton-berceuses {
+  background: #ffffff;
+  border-radius: 31px;
+  width: 179px;
+  height: 57px;
+  position: absolute;
+  left: 637px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .histoires2 {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
@@ -492,6 +506,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1176.9px;
   top: 484px;
   overflow: visible;
+  cursor: pointer;
 }
 .teenyicons-bin-outline {
   width: 36.97px;
@@ -500,6 +515,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1295.58px;
   top: 482px;
   overflow: visible;
+  cursor: pointer;
 }
 .humbleicons-download {
   width: 58.37px;
@@ -508,6 +524,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1229.43px;
   top: 477px;
   overflow: visible;
+  cursor: pointer;
 }
 .ic-baseline-favorite {
   width: 44.75px;
@@ -516,6 +533,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1132.15px;
   top: 482px;
   overflow: visible;
+  cursor: pointer;
 }
 .mingcute-download-3-fill {
   width: 51.56px;
@@ -524,6 +542,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1084.48px;
   top: 483px;
   overflow: hidden;
+  cursor: pointer;
 }
 .group4 {
   width: 100%;
