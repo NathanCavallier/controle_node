@@ -70,7 +70,6 @@ table {
 
 tr {
   align-items: normal;
-  sp
 }
 
 .rectangle-1 {
@@ -285,9 +284,9 @@ tr {
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.758) 0%,
-    rgba(255, 255, 255, 0.744) 60.50000190734863%,
-    rgba(255, 255, 255, 0.627) 91.50000214576721%,
-    rgba(255, 255, 255, 0.174) 99.00000095367432%
+    rgba(255, 255, 255, 0.816) 60.50000190734863%,
+    rgba(255, 255, 255, 0.77) 91.50000214576721%,
+    rgba(255, 255, 255, 0.581) 99.00000095367432%
   );
   border-radius: 0px 0px 29px 29px;
   width: 262px;
@@ -300,12 +299,13 @@ tr {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Bold", sans-serif;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 100%;
-  font-weight: 700;
   position: absolute;
-  left: 108px;
-  top: 540px;
+  left: 95px;
+  top: 550px;
+  font-family: fantasy;
+  font-weight: 500;
 }
 .solar-play-outline {
   width: 53px;

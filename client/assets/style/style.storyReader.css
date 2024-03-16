@@ -198,8 +198,9 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 40px;
-  top: 32px;
+  top: -32px;
   -webkit-text-stroke: 1px #ffffff;
+  font-family: fantasy;
 }
 .alice-au-pays-des-merveilles-1951-62942-1200-x-675-1 {
   border-radius: 31px 0px 0px 0px;
@@ -226,7 +227,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 284px;
   top: 175px;
 }
-.chapitre-1-down-the-rabbit-hole {
+.bookNameClass {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Italic", sans-serif;
@@ -236,10 +237,11 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-style: true;
   position: absolute;
   left: 343px;
-  top: 186px;
+  top: 210px;
   width: 510px;
+  font-family: fantasy;
 }
-.down-the-rabbit-hole {
+.chapterName {
   color: #d9d9d9;
   text-align: left;
   font-family: "Judson-Italic", sans-serif;
@@ -252,17 +254,19 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 292px;
   width: 248px;
 }
-.alice-au-pays-des-merveilles {
+
+.chapterNbrAndName {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Bold", sans-serif;
   font-size: 32px;
   line-height: 100%;
-  font-weight: 700;
+  font-weight: 100;
   position: absolute;
   left: 368px;
   top: 929px;
   width: 510px;
+  font-family: fantasy;
 }
 .material-symbols-favorite-outline {
   width: 63px;
