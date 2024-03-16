@@ -156,10 +156,11 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: static;
 }
 .berceuses {
+  opacity: 0.5;
   color: #a2a2a2;
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 100%;
   font-weight: 400;
   position: absolute;
@@ -167,6 +168,20 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 369px;
   width: 141.85px;
 }
+
+.bouton-berceuses {
+  margin-left: 14.3%;
+  margin-top: 0%;
+  background: #ffffff;
+  border-radius: 31px;
+  width: 190px;
+  height: 57px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .mingcute-music-3-line {
   width: 42px;
   height: 40px;
@@ -227,16 +242,28 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-size: 28px;
   font-weight: 400;
   position: absolute;
-  left: 1267px;
+  left: 1270px;
   top: 278px;
   cursor: pointer;
 }
+
+.bouton-historique {
+  background: rgba(176, 113, 255, 0.9);
+  border-radius: 31px;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: 1230px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .mdi-recent {
   width: 36px;
   height: 36px;
   position: absolute;
-  left: 1228px;
-  top: 279px;
+  left: -36px;
+  top: -0px;
   overflow: visible;
   cursor: pointer;
 }
@@ -274,12 +301,24 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 278px;
   cursor: pointer;
 }
+
+.bouton-favoris {
+  background: #ffffff;
+  border-radius: 31px;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: 1038px;
+  top: 269px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .material-symbols-favorite-outline {
   width: 46px;
   height: 41px;
   position: absolute;
-  left: 1047px;
-  top: 279px;
+  left: -50px;
+  top: 0px;
   overflow: visible;
   cursor: pointer;
 }

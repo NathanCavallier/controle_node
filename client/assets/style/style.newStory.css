@@ -663,15 +663,15 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 309px;
 }
 .chapitre-1 {
-  color: #d7d7d7;
+  color: #999999;
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
   font-size: 22px;
   line-height: 100%;
   font-weight: 400;
   position: absolute;
-  left: 41.5%;
-  top: 33%;
+  left: 705px;
+  top: 300px;
 }
 .group-72 {
   width: 466px;
