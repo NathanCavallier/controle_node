@@ -35,7 +35,6 @@ a {
   text-decoration: none;
 }
 
-
 input, textarea {
   border-radius: 10px;
   border: none;
@@ -46,8 +45,6 @@ input, textarea {
 input:focus, textarea:focus {
   outline: none;
 }
-
-
 
 #main-group-scroll {
   min-height: 400px; 
@@ -455,7 +452,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 319px;
   top: 478px;
 }
-.editeur {
+.typeHistoire {
   opacity: 0.8;
   color: rgb(255, 232, 193);
   text-align: left;
