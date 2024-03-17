@@ -101,8 +101,8 @@ tr {
   height: 200px;
   width: 260px;
   position: absolute;
-  left: 428px;
-  top: 400px;
+  left: 380px;
+  top: 390px;
   overflow: visible;
 }
 .group-14 {
@@ -283,7 +283,7 @@ tr {
 .bouton-accueil4 {
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.758) 0%,
+    rgb(255, 255, 255) 0%,
     rgba(255, 255, 255, 0.816) 60.50000190734863%,
     rgba(255, 255, 255, 0.77) 91.50000214576721%,
     rgba(255, 255, 255, 0.581) 99.00000095367432%
@@ -302,7 +302,7 @@ tr {
   font-size: 21px;
   line-height: 100%;
   position: absolute;
-  left: 95px;
+  left: 85px;
   top: 550px;
   font-family: fantasy;
   font-weight: 500;
@@ -319,7 +319,7 @@ tr {
   width: 47px;
   height: 47px;
   position: absolute;
-  left: 270px;
+  left: 285px;
   top: 395px;
   overflow: visible;
 }
@@ -332,18 +332,17 @@ tr {
 .charm-menu-kebab {
   width: 42px;
   height: 39px;
-  position: relative;
-  overflow: hidden;
-}
-.group {
-  width: 9.38%;
-  height: 78.12%;
   position: absolute;
-  right: 45.31%;
-  left: 45.31%;
-  bottom: 10.94%;
-  top: 10.94%;
   overflow: visible;
+}
+.group-kebab {
+  width: 41px;
+  height: 28px;
+  position: absolute;
+  left: 295px;
+  top: 375px;
+  overflow: visible;
+  cursor: pointer;
 }
 
 .group-37 {
