@@ -1,7 +1,7 @@
 // Class pour la création d'une histoire
 export class Story {
   constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], 
-    currentChapter = 1, id = null, imageLink, releaseYear, storyDescription , storyGenre, storyTags = [], isFavorite = false, 
+    currentChapter = 1, id = null, imageLink, releaseYear, storyDescription , storyGenre, listOfChapters, storyTags = [], isFavorite = false, 
     isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isFinished = false) {
     this.id = id;
     this.title = title;
@@ -14,6 +14,7 @@ export class Story {
     this.releaseYear = releaseYear;
     this.imageLink = imageLink;
     this.storyTags = storyTags;
+    this.listOfChapters = listOfChapters;
 
     this.isFavorite = isFavorite;
     this.isBookmark = isBookmark;
@@ -45,6 +46,24 @@ export class Story {
   }
   getStoryDescription() {
     return this.storyDescription;
+  }
+  getStoryGenre() {
+    return this.storyGenre;
+  }
+  getListOfChapters() {
+    return this.listOfChapters;
+  }
+  setListOfChapters(listOfChapters) {
+    this.listOfChapters = listOfChapters;
+  }
+  getStoryTags() {
+    return this.storyTags;
+  }
+  setStoryGenre(storyGenre) {
+    this.storyGenre = storyGenre;
+  }
+  setStoryTags(storyTags) {
+    this.storyTags = storyTags;
   }
   setStoryDescription(storyDescription) {
     this.storyDescription = storyDescription;

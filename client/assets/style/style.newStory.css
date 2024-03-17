@@ -328,18 +328,42 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 70px;
   top: 558px;
+  color: #a2a2a2;
+  text-align: center;
+  font-family: "Itim-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 .nbr-chapitre {
-  color: #e8e7e7;
+  color: #a2a2a2;
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 400;
   position: absolute;
   left: 89px;
-  top: 567px;
+  top: 530px;
   width: 200px;
 }
+
+.carbon-add-filled-2 {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  overflow: visible;
+  left: 262px;
+  top: 564px;
+}
+
+.zondicons-minus-solid {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  overflow: visible;
+  left: 228px;
+  top: 565px;
+}
+
 .nombre-de-chapitre {
   color: #d9d9d9;
   text-align: left;

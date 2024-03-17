@@ -1,6 +1,7 @@
-import { Story } from '../models/story.model.js';
+import { Story } from '../models/story.model';
 
 // Créer, lire, mettre à jour et supprimer des histoires
+
 function getAllStories(req, res) {
     return Story.find({})
         .then((stories) => {
