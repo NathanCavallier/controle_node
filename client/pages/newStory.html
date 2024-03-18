@@ -86,7 +86,7 @@
         <label class="nbr-chapitre" for="numberOfChapters">Nombre de chapitre:</label>
         <input class="rectangle-21" id="numberOfChapters" value="1" />
         <!--Augmenter le nombre de chapitre-->
-        <div onclick="increaseNumberOfChapters(); addNewChapter()" class="box-clicable">
+        <div onclick="addNewChapter()" class="box-clicable">
             <svg class="carbon-add-filled-2" width="40" height="40" viewBox="0 0 40 40" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -142,50 +142,54 @@
                 fill="#FF7070" />
         </svg>
 
+        <div class="rectangle-22">
+            <ul class="conteneur-chapitre" id="editableStoryZone">
+                <li>
+                    <div onclick="addNewChapter()" class="box-clicable">
+                        <svg class="carbon-add-filled2" width="53" height="54" viewBox="0 0 53 54" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_67_72)">
+                                <path
+                                    d="M26.5 3.375C20.3734 3.45074 14.5186 5.96411 10.1862 10.3783C5.85367 14.7926 3.38684 20.7578 3.3125 27C3.38684 33.2422 5.85367 39.2074 10.1862 43.6217C14.5186 48.0359 20.3734 50.5493 26.5 50.625C32.6266 50.5493 38.4814 48.0359 42.8138 43.6217C47.1463 39.2074 49.6132 33.2422 49.6875 27C49.6132 20.7578 47.1463 14.7926 42.8138 10.3783C38.4814 5.96411 32.6266 3.45074 26.5 3.375ZM39.75 28.6875H28.1562V40.5H24.8438V28.6875H13.25V25.3125H24.8438V13.5H28.1562V25.3125H39.75V28.6875Z"
+                                    fill="#D9D9D9" fill-opacity="0.52" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_67_72" x="-4" y="0" width="61" height="62"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_72" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_72"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
 
-        <table id="editableStoryZone">
-            <tr>
-                <div class="group-73">
-                    <div class="rectangle-25"></div>
-                    <textarea id="storyContent" class="contenue-du-chapitre"
-                        placeholder="Il était une fois....."></textarea>
-                </div>
+                    <div class="group-72">
+                        <div class="rectangle-24"></div>
+                        <input id="titre" class="titre-de-l-histoire" placeholder="Titre du chapitre ..." />
+                    </div>
 
-                <div class="group-71">
-                    <div class="rectangle-23"></div>
-                    <p class="chapitre-1" id="change-chapter">Chapitre 1</p>
-                </div>
+                    <div class="group-71">
+                        <div class="rectangle-23"></div>
+                        <p class="chapitre-1" id="change-chapter">Chapitre 1</p>
+                    </div>
 
-                <div class="group-72">
-                    <div class="rectangle-24"></div>
-                    <input id="titre" class="titre-de-l-histoire" placeholder="Titre du chapitre ..." />
-                </div>
-            </tr>
+                    <div class="group-73">
+                        <div class="rectangle-25"></div>
+                        <textarea id="storyContent" class="contenue-du-chapitre"
+                            placeholder="Il était une fois....."></textarea>
+                    </div>
+                </li>
 
-        </table>
-
-        <svg class="carbon-add-filled2" width="53" height="54" viewBox="0 0 53 54" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_67_72)">
-                <path
-                    d="M26.5 3.375C20.3734 3.45074 14.5186 5.96411 10.1862 10.3783C5.85367 14.7926 3.38684 20.7578 3.3125 27C3.38684 33.2422 5.85367 39.2074 10.1862 43.6217C14.5186 48.0359 20.3734 50.5493 26.5 50.625C32.6266 50.5493 38.4814 48.0359 42.8138 43.6217C47.1463 39.2074 49.6132 33.2422 49.6875 27C49.6132 20.7578 47.1463 14.7926 42.8138 10.3783C38.4814 5.96411 32.6266 3.45074 26.5 3.375ZM39.75 28.6875H28.1562V40.5H24.8438V28.6875H13.25V25.3125H24.8438V13.5H28.1562V25.3125H39.75V28.6875Z"
-                    fill="#D9D9D9" fill-opacity="0.52" />
-            </g>
-            <defs>
-                <filter id="filter0_d_67_72" x="-4" y="0" width="61" height="62" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                        result="hardAlpha" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="2" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_72" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_72" result="shape" />
-                </filter>
-            </defs>
-        </svg>
+            </ul>
+        </div>
 
     </article>
 
@@ -219,12 +223,10 @@
 
         // Afficher un nouveau chapitre en fonction du nombre de chapitre en l'ajoutant à la table
         function addNewChapter() {
-            if (getNumberOfChapters() > 1) {
+            if (getNumberOfChapters() >= 1) {
                 var numberOfChapters = getNumberOfChapters();
-                var table = document.getElementById("editableStoryZone");
-                var row = table.insertRow(table.rows.length);
-                var cell1 = row.insertCell(0);
-                cell1.innerHTML =
+                var newli = document.createElement("li");
+                newli.innerHTML =
                     "<div class=\"group-73\">\n" +
                     "    <div class=\"rectangle-25\"></div>\n" +
                     "    <textarea id=\"storyContent-" + numberOfChapters + "\" class=\"contenue-du-chapitre\"\n" +
@@ -234,14 +236,20 @@
                     "    <div class=\"rectangle-23\"></div>\n" +
                     "    <p class=\"chapitre-1\" id=\"change-chapter-" + numberOfChapters + "\">Chapitre " + numberOfChapters + "</p>\n" +
                     "</div>\n" +
-                    "";
+                    "<div class=\"group-72\"> \n" +
+                    "    <div class=\"rectangle-24\"></div> \n" +
+                    "    <input id=\"titre-" + numberOfChapters + "\" class=\"titre-de-l-histoire\" placeholder=\"Titre du chapitre ...\"> \n" +
+                    "</div>";
+                document.getElementById("editableStoryZone").appendChild(newli);
+                increaseNumberOfChapters();
             }
         }
 
+
         // Fonction qui permet de supprimer un chapitre en fonction du numéro du chapitre
         function deleteChapter(chapterNumber) {
-            var table = document.getElementById("editableStoryZone");
-            table.deleteRow(chapterNumber);
+            var li = document.getElementById("editableStoryZone");
+            li.removeChild(li.lastChild);
         }
 
         // Fonction qui permet d'afficher un nouveau chapitre en l'ajoutant à la page

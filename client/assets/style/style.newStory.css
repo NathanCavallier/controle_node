@@ -4,10 +4,17 @@
 }
 
 article {
-  align-items:first baseline;
+  align-items: first baseline;
 }
 
-h1, h2, h3 {
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
   font-family: 'Indie Flower', cursive;
 }
 
@@ -15,7 +22,8 @@ p {
   font-family: fantasy;
 }
 
-html, body {
+html,
+body {
   width: auto;
   height: 100%;
   margin: 0;
@@ -27,47 +35,55 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .box-clicable {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
 }
 
-input, textarea {
+table {
+  margin-top: -1%;
+margin-left: 5px;
+  overflow: visible;
+}
+
+tr {
+  align-items: baseline;
+}
+
+input,
+textarea {
   border-radius: 10px;
   border: none;
   background: none;
   color: rgb(255, 232, 193);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
-#main-group-scroll {
-  min-height: 400px; 
-  overflow-y: auto; 
-  white-space: nowrap; 
+.rectangle-22::-webkit-scrollbar {
+  width: 6px;
 }
 
-#main-group-scroll::-webkit-scrollbar {
-width: 8px; 
+.rectangle-22::-webkit-scrollbar-thumb {
+  width: 6px;
 }
 
-#main-group-scroll::-webkit-scrollbar-thumb {
-width: 8px; 
+.rectangle-22::-webkit-scrollbar-thumb {
+  background: #f0f0f02c;
+  border-radius: 6px;
+  width: 6px;
 }
 
-#main-group-scroll::-webkit-scrollbar-thumb {
-background: #f0f0f0; 
-border-radius: 6px; 
-width: 8px; 
-}
-
-#main-group-scroll:hover #main-group-scroll::-webkit-scrollbar {
-background: #E8E8E8; /* Couleur de la poignée */
+.rectangle-22:hover .rectangle-22::-webkit-scrollbar {
+  background: #e8e8e860;
+  /* Couleur de la poignée */
 }
 
 .rectangle-1 {
@@ -80,6 +96,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 169px;
   box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
 }
+
 .c-lins-du-soir {
   margin-top: 0%;
   color: rgba(255, 255, 255, 0.98);
@@ -92,6 +109,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 32px;
   -webkit-text-stroke: 1px #ffffff;
 }
+
 .teenyicons-bin-outline {
   width: 39px;
   height: 40px;
@@ -100,6 +118,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 54px;
   overflow: hidden;
 }
+
 .bouton-histoires-page {
   background: rgba(255, 255, 255, 0.35);
   border-radius: 31px;
@@ -109,6 +128,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 508px;
   top: 46px;
 }
+
 .nouvelle-histoire {
   color: #ffffff;
   text-align: left;
@@ -119,10 +139,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 534px;
   top: 58px;
 }
+
 .group-37 {
   position: absolute;
   inset: 0;
 }
+
 .ellipse-3 {
   background: #ffffff;
   border-radius: 50%;
@@ -133,6 +155,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .teenyicons-bin-solid {
   width: 38px;
   height: 38px;
@@ -142,15 +165,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
   cursor: pointer;
 }
+
 .group-38 {
   position: absolute;
   inset: 0;
 }
+
 .group-39 {
   width: 66px;
   height: 66px;
   position: static;
 }
+
 .ellipse-32 {
   background: #ffffff;
   border-radius: 50%;
@@ -161,6 +187,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .mi-home {
   width: 49px;
   height: 47px;
@@ -170,6 +197,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
   cursor: pointer;
 }
+
 .line-4 {
   width: 524.04px;
   height: 0px;
@@ -178,6 +206,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 430.98px;
   overflow: visible;
 }
+
 .rectangle-17 {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 31px 31px 0px 0px;
@@ -187,6 +216,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 51px;
   top: 169px;
 }
+
 .material-symbols-auto-stories-outline {
   width: 49px;
   height: 38px;
@@ -195,6 +225,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 57px;
   overflow: visible;
 }
+
 .rectangle-172 {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 31px 31px 0px 0px;
@@ -206,15 +237,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   transform-origin: 0 0;
   transform: rotate(180deg) scale(1, 1);
 }
+
 .group-60 {
   position: absolute;
   inset: 0;
 }
+
 .group-57 {
   width: 415px;
   height: 40px;
   position: static;
 }
+
 .ajouter-une-nouvelle-histoire {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
@@ -228,6 +262,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 415px;
   height: 40px;
 }
+
 .carbon-add-filled {
   width: 40px;
   height: 40px;
@@ -236,10 +271,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 198px;
   overflow: visible;
 }
+
 .group-58 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-6 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 31px;
@@ -252,6 +289,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 66px;
   top: 300px;
 }
+
 .union {
   width: 120.01px;
   height: 122.35px;
@@ -261,6 +299,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
   cursor: pointer;
 }
+
 .photo-de-l-histoire {
   color: #a2a2a2;
   text-align: center;
@@ -273,10 +312,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 82%;
   width: 241px;
 }
+
 .group-80 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-19 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 46px;
@@ -289,6 +330,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 318px;
   top: 325px;
 }
+
 .titre {
   color: #a2a2a2;
   text-align: left;
@@ -301,6 +343,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 338px;
   width: 305px;
 }
+
 .titre2 {
   color: #d9d9d9;
   text-align: left;
@@ -313,10 +356,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 300px;
   width: 171.84px;
 }
+
 .group-76 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-21 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 46px;
@@ -334,6 +379,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-size: 20px;
   font-weight: 400;
 }
+
 .nbr-chapitre {
   color: #a2a2a2;
   text-align: left;
@@ -376,10 +422,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 532px;
   width: 212px;
 }
+
 .group-77 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-212 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 46px;
@@ -392,6 +440,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 318px;
   top: 562px;
 }
+
 .ann-e {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -405,6 +454,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 572px;
   width: 292px;
 }
+
 .ann-e-de-parution {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -418,10 +468,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 535px;
   width: 210px;
 }
+
 .group-79 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-20 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 46px;
@@ -434,6 +486,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 319px;
   top: 404px;
 }
+
 .auteur {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -447,6 +500,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 415px;
   width: 300px;
 }
+
 .nom-de-l-auteur {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -460,10 +514,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 379px;
   width: 171.32px;
 }
+
 .group-78 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-202 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 46px;
@@ -476,6 +532,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 319px;
   top: 478px;
 }
+
 .typeHistoire {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -489,6 +546,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 490px;
   width: 297px;
 }
+
 .l-diteur {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -502,6 +560,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 453px;
   width: 171.32px;
 }
+
 .rectangle-22 {
   border-radius: 23px;
   border-style: solid;
@@ -512,12 +571,16 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 672px;
   top: 288px;
-  overflow-y: auto;
+  direction: ltr;
+  scroll-behavior: auto;
+  overflow-y: scroll;
 }
+
 .group-75 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-213 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 23px;
@@ -530,6 +593,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 70px;
   top: 661px;
 }
+
 .description-de-l-histoire {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -544,6 +608,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 546px;
   height: 209px;
 }
+
 .courte-description {
   opacity: 0.8;
   color: rgb(255, 232, 193);
@@ -558,15 +623,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 256.59px;
   height: 28px;
 }
+
 .group-14 {
   position: absolute;
   inset: 0;
 }
+
 .group-42 {
   width: 190px;
   height: 57px;
   position: static;
 }
+
 .bouton-accueil {
   background: rgba(255, 255, 255, 0.96);
   border-radius: 31px;
@@ -579,6 +647,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 1162px;
   top: 924px;
 }
+
 #enregistrer {
   color: rgba(96, 122, 255, 0.9);
   text-align: left;
@@ -590,6 +659,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 935px;
   cursor: pointer;
 }
+
 .fluent-save-20-regular {
   width: 44px;
   height: 41px;
@@ -598,10 +668,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 931px;
   overflow: visible;
 }
+
 .group-32 {
   position: absolute;
   inset: 0;
 }
+
 .bouton-accueil2 {
   background: #ffffff;
   border-radius: 31px;
@@ -614,6 +686,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 980px;
   top: 925px;
 }
+
 #annuler {
   color: rgba(255, 112, 112, 0.9);
   text-align: left;
@@ -625,6 +698,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 934px;
   cursor: pointer;
 }
+
 .material-symbols-light-cancel {
   width: 52.96px;
   height: 52px;
@@ -633,15 +707,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 928px;
   overflow: visible;
 }
+
 .group-74 {
   position: absolute;
   inset: 0;
 }
+
 .group-73 {
   width: 665px;
   height: 506px;
   position: static;
 }
+
 .rectangle-25 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 23px;
@@ -654,6 +731,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 686px;
   top: 373px;
 }
+
 .contenue-du-chapitre {
   color: #ffffff;
   text-align: left;
@@ -661,17 +739,25 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-size: 25px;
   line-height: 100%;
   font-weight: 400;
-  position: relative;
+  position: absolute;
   left: 704px;
-  top: 388px;
+  top: 390px;
   width: 635px;
   height: 468px;
 }
+
+.conteneur-chapitre {
+  position: absolute;
+  left: 704px;
+  top: 280px;
+}
+
 .group-71 {
   width: 133px;
   height: 53px;
   position: static;
 }
+
 .rectangle-23 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 23px;
@@ -684,22 +770,25 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 686px;
   top: 309px;
 }
+
 .chapitre-1 {
   color: #999999;
   text-align: left;
   font-family: "Itim-Regular", sans-serif;
-  font-size: 22px;
-  line-height: 100%;
+  font-size: 20px;
+  line-height: 80%;
   font-weight: 400;
   position: absolute;
   left: 705px;
   top: 300px;
 }
+
 .group-72 {
   width: 466px;
   height: 53px;
   position: static;
 }
+
 .rectangle-24 {
   background: rgba(20, 50, 46, 0.33);
   border-radius: 23px;
@@ -712,6 +801,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   left: 827px;
   top: 309px;
 }
+
 .titre-de-l-histoire {
   color: #a2a2a2;
   text-align: left;
@@ -724,6 +814,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 323px;
   width: 443px;
 }
+
 .carbon-add-filled2 {
   width: 53px;
   height: 54px;

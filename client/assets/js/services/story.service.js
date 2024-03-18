@@ -42,6 +42,7 @@ export class StoryService {
      * @return {Story}
      */
     getStoryById(id) {
+
     }
 
     /**
@@ -50,6 +51,7 @@ export class StoryService {
      * @return {Story}
      */
     createStory(story) {
+        
     }
 
     /**
