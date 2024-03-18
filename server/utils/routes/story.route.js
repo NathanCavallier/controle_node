@@ -1,5 +1,5 @@
-import { express } from 'express';
-import { storyController } from '../controllers/story.controller';
+const express = require('express');
+const storyController = require('../controllers/story.controller');
 
 const router = express.Router();
 
@@ -9,4 +9,4 @@ router.get('/:id', storyController.getStoryById);
 router.put('/:id', storyController.updateStory);
 router.delete('/:id', storyController.deleteStory)
 
-export default router;
+module.exports = router;

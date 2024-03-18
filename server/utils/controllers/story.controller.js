@@ -1,4 +1,4 @@
-import { Story } from '../models/story.model';
+const Story = require('../models/story.model');
 
 // Créer, lire, mettre à jour et supprimer des histoires
 
@@ -55,7 +55,7 @@ function deleteStory(req, res) {
 }
 
 
-export default {
+module.exports = {
     getAllStories,
     getStoryById,
     createStory,

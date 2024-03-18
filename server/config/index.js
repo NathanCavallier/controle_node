@@ -1,6 +1,6 @@
-import { express } from "express";
-import storyRoutes from "../utils/routes/story.route";
-import lullabyRoutes from "../utils/routes/lullaby.route";
+const express = require("express");
+const storyRoutes = require("../utils/routes/story.route");
+const lullabyRoutes = require("../utils/routes/lullaby.route");
 
 const routerStory = express.Router();
 const routerLullaby = express.Router();

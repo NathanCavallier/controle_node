@@ -1,4 +1,4 @@
-import { Mongoose } from "mongoose";
+const Mongoose = require('mongoose');
 
 // Schéma de la collection story
 const storySchema = new Mongoose.Schema({

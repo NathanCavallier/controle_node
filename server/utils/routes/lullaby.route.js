@@ -1,5 +1,5 @@
-import { express } from 'express';
-import lullabyController from '../controllers/lullaby.controller';
+const express = require('express');
+const lullabyController = require('../controllers/lullaby.controller');
 
 const router = express.Router();
 
@@ -9,4 +9,4 @@ router.post('/', lullabyController.createLullaby);
 router.put('/:id', lullabyController.updateLullaby);
 router.delete('/:id', lullabyController.deleteLullaby);
 
-export default router;
+module.exports = router;

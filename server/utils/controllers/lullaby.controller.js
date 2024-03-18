@@ -1,4 +1,4 @@
-import { Lullaby } from '../models/lullaby.model';
+const Lullaby = require('../models/lullaby.model');
 
 
 function getAllLullabies(req, res) {
@@ -58,7 +58,7 @@ function deleteLullaby(req, res) {
 }
 
 
-export default {
+module.exports = {
     getAllLullabies,
     getOneLullaby,
     createLullaby,
