@@ -22,11 +22,15 @@ export class StoryService {
         fetch(request)
             .then(response => response.json())
             .then(stories => {
-                target.innerHTML = "";
                 stories.forEach(story => {
-                    let div = document.createElement("div");
-                    div.innerHTML = story.title;
-                    target.appendChild(div);
+                    let newTabbleRow = document.createElement("tr");
+                    for (let index = 0; index < 5; index++) {
+                        let newCell = document.createElement("td");
+                        newCell
+                        newCell.innerHTML = story[index];
+                        newTabbleRow.appendChild(newCell);
+                    }
+                    
                 });
             })
             .catch(error => console.log(error));

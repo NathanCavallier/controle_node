@@ -19,4 +19,4 @@ const lullabySchema = new Mongoose.Schema({
 
 let Lullaby = Mongoose.model('Lullaby',lullabySchema);
 
-export default Lullaby;
+module.exports = Lullaby;

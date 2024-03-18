@@ -23,4 +23,4 @@ const storySchema = new Mongoose.Schema({
 
 let Story = Mongoose.model('Story', storySchema);
 
-export default Story;
+module.exports = Story;

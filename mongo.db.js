@@ -12,3 +12,6 @@ promise.then(function(db) {
         console.log(`DB listenning on port ${port}`);
     });
 });
+
+
+module.exports = app;

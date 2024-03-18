@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <link rel="StyleSheet" href="../client/assets/style/style.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
-    <script src="../client/assets/js/listes/liste.stories.js"></script>
-    <script src="./assets/js/redirect.js"></script>
-    <script src="./assets/js/tasks/home.js"></script>
+    <script type="module" src="../client/assets/js/listes/liste.stories.js"></script>
+    <script type="module" src="./assets/js/redirect.js"></script>
+    <script type="module" src="./assets/js/tasks/home.js"></script>
 </head>
 
 <body>
@@ -73,7 +73,6 @@
         <table>
             <tr>
                 <td>
-                    <dialog>Mettre à la corbeille</dialog>
                     <div class="rectangle-5"></div>
                     <img class="cardPicture"
                         src="../client/assets/img/alice_au_pays_des_merveilles_1951_62942_1200x675_1.png"
@@ -166,7 +165,7 @@
                 </svg>
             </div>
 
-            <div onclick='window.location.href="./home.html"' class="box-clicable">
+            <div id="home" class="box-clicable">
                 <div class="group-39">
                     <a class="ellipse-32"></a>
                     <svg class="mi-home" width="49" height="47" viewBox="0 0 49 47" fill="none"

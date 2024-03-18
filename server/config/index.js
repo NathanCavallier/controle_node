@@ -8,4 +8,4 @@ const routerLullaby = express.Router();
 routerStory.use("/stories", storyRoutes);
 routerLullaby.use("/lullabies", lullabyRoutes);
 
-export { routerStory, routerLullaby };
+module.exports = { routerStory, routerLullaby };
