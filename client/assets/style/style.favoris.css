@@ -45,14 +45,6 @@ html, body {
 a {
   text-decoration: none;
 }
-/*
-.background-5-1 {
-  width: 50%max-content;
-  height: 50%max-content;
-  position: relative;
-  object-fit: cover;
-}
-*/
 
 #main-group-scroll {
   min-height: 400px; 

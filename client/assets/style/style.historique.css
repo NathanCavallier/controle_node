@@ -170,15 +170,13 @@ background: #E8E8E8; /* Couleur de la poignée */
 }
 
 .bouton-berceuses {
-  margin-left: 14.3%;
-  margin-top: 0%;
   background: #ffffff;
   border-radius: 31px;
-  width: 190px;
+  width: 185px;
   height: 57px;
   position: absolute;
-  left: 50%;
-  top: 10%;
+  left: 836px;
+  top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -388,17 +386,6 @@ background: #E8E8E8; /* Couleur de la poignée */
   inset: 0;
 }
 .bouton-accueil4 {
-  background: #ffffff;
-  border-radius: 31px;
-  width: 179px;
-  height: 57px;
-  position: absolute;
-  left: 637px;
-  top: 269px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.bouton-berceuses {
   background: #ffffff;
   border-radius: 31px;
   width: 179px;

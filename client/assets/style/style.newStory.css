@@ -512,6 +512,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 672px;
   top: 288px;
+  overflow-y: auto;
 }
 .group-75 {
   position: absolute;
@@ -660,7 +661,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-size: 25px;
   line-height: 100%;
   font-weight: 400;
-  position: absolute;
+  position: relative;
   left: 704px;
   top: 388px;
   width: 635px;
