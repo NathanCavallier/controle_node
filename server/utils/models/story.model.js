@@ -6,10 +6,10 @@ const storySchema = new Mongoose.Schema({
     author: { type: String, required: true },
     numberOfChapters: { type: Number, required: true },
     currentChapter: { type: Number, required: true },
-    storyContent: { type: Array<String>(''), required: true },
-    storyDescription : { type: String, required: true },
+    storyContent: { type: String, required: true },
+    storyDescription: { type: String, required: true },
     storyGenre: { type: String, required: true },
-    storyTags: { type: Array<String>(''), required: true },
+    storyTags: { type: String, required: true },
     releaseYear: { type: Date, default: Date.now },
     imageLink: { type: String, required: true },
 
