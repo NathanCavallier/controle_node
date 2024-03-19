@@ -5,7 +5,9 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Indie Flower', cursive;
 }
 
@@ -13,7 +15,8 @@ p {
   font-family: fantasy;
 }
 
-html, body {
+html,
+body {
   width: auto;
   height: 100%;
   margin: 0;
@@ -25,8 +28,9 @@ html, body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .box-clicable {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a {
@@ -34,27 +38,32 @@ a {
 }
 
 #main-group-scroll {
-  min-height: 400px; 
-  overflow-y: auto; 
-  white-space: nowrap; 
+  min-height: 400px;
+  overflow-y: auto;
+  white-space: nowrap;
 }
 
 #main-group-scroll::-webkit-scrollbar {
-width: 8px; 
+  width: 8px;
+  opacity: 0.25;
 }
 
 #main-group-scroll::-webkit-scrollbar-thumb {
-width: 8px; 
+  width: 8px;
+  opacity: 0.25;
 }
 
 #main-group-scroll::-webkit-scrollbar-thumb {
-background: #f0f0f0; 
-border-radius: 6px; 
-width: 8px; 
+  opacity: 0.25;
+  background: rgba(210, 179, 249, 0.195);
+  border-radius: 6px;
+  width: 8px;
 }
 
 #main-group-scroll:hover #main-group-scroll::-webkit-scrollbar {
-background: #E8E8E8; /* Couleur de la poignée */
+  background: rgba(88, 54, 130, 0.679);
+  opacity: 0.25;
+  /* Couleur de la poignée */
 }
 
 
@@ -64,12 +73,49 @@ td {
 }
 
 table {
-  top: 279px;
+  margin-top: -30%;
+  top: 40px;
+  left: -60px;
+  position: absolute;
   overflow: visible;
 }
 
 tr {
-  align-items: normal;
+  align-items: flex-start;
+}
+
+.icomoon-free-bin {
+  width: 35px;
+  height: 41px;
+  position: absolute;
+  overflow: visible;
+}
+
+.icomoon-free-bin:hover {
+  width: 33px;
+  height: 38px;
+  position: absolute;
+  overflow: visible;
+}
+
+.group-kebab {
+  width: 41px;
+  height: 28px;
+  position: absolute;
+  left: 295px;
+  top: 540px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.group-kebab {
+  width: 41px;
+  height: 28px;
+  position: absolute;
+  left: 295px;
+  top: 540px;
+  overflow: visible;
+  cursor: pointer;
 }
 
 .rectangle-1 {
@@ -85,6 +131,7 @@ tr {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 .c-lins-du-soir {
   margin-top: 0%;
   color: rgba(255, 255, 255, 0.98);
@@ -97,6 +144,7 @@ tr {
   top: 32px;
   -webkit-text-stroke: 1px #ffffff;
 }
+
 .group-48 {
   height: 200px;
   width: 260px;
@@ -105,15 +153,18 @@ tr {
   top: 390px;
   overflow: visible;
 }
+
 .group-14 {
   position: absolute;
   inset: 0;
 }
+
 .group-42 {
   width: 180px;
   height: 57px;
   position: static;
 }
+
 .bouton-accueil {
   background: rgba(255, 255, 255, 0.96);
   border-radius: 31px;
@@ -124,6 +175,7 @@ tr {
   top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .historique {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
@@ -134,6 +186,7 @@ tr {
   left: 1267px;
   top: 278px;
 }
+
 .mdi-recent {
   width: 36px;
   height: 36px;
@@ -142,10 +195,12 @@ tr {
   top: 279px;
   overflow: visible;
 }
+
 .group-32 {
   position: absolute;
   inset: 0;
 }
+
 .bouton-accueil2 {
   background: #ffffff;
   border-radius: 31px;
@@ -156,6 +211,7 @@ tr {
   top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .favoris {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
@@ -166,6 +222,7 @@ tr {
   left: 1102px;
   top: 278px;
 }
+
 .material-symbols-favorite-outline {
   width: 46px;
   height: 41px;
@@ -174,10 +231,12 @@ tr {
   top: 279px;
   overflow: visible;
 }
+
 .group-33 {
   position: absolute;
   inset: 0;
 }
+
 .bouton-berceuses {
   background: #ffffff;
   border-radius: 31px;
@@ -188,6 +247,7 @@ tr {
   top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .berceuses {
   color: rgba(176, 113, 255, 0.9);
   text-align: center;
@@ -199,6 +259,7 @@ tr {
   top: 277px;
   width: 143px;
 }
+
 .mingcute-music-3-line {
   width: 42px;
   height: 40px;
@@ -207,6 +268,7 @@ tr {
   top: 277px;
   overflow: hidden;
 }
+
 .group {
   width: 100%;
   height: 100%;
@@ -217,10 +279,12 @@ tr {
   top: 0%;
   overflow: visible;
 }
+
 .group-34 {
   position: absolute;
   inset: 0;
 }
+
 .bouton-accueil3 {
   background: rgba(176, 113, 255, 0.9);
   border-radius: 31px;
@@ -231,6 +295,7 @@ tr {
   top: 269px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .histoires {
   color: #ffffff;
   text-align: left;
@@ -241,6 +306,7 @@ tr {
   left: 701px;
   top: 279px;
 }
+
 .material-symbols-auto-stories-outline {
   width: 49px;
   height: 38px;
@@ -249,10 +315,12 @@ tr {
   top: 277px;
   overflow: visible;
 }
+
 .group-47 {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-5 {
   background: rgba(246, 246, 246, 0.24);
   border-radius: 31px;
@@ -266,6 +334,7 @@ tr {
   top: 386px;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .cardPicture {
   border-radius: 31px;
   width: 260px;
@@ -281,13 +350,11 @@ tr {
 }
 
 .bouton-accueil4 {
-  background: linear-gradient(
-    0deg,
-    rgb(255, 255, 255) 0%,
-    rgba(255, 255, 255, 0.816) 60.50000190734863%,
-    rgba(255, 255, 255, 0.77) 91.50000214576721%,
-    rgba(255, 255, 255, 0.581) 99.00000095367432%
-  );
+  background: linear-gradient(0deg,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.816) 60.50000190734863%,
+      rgba(255, 255, 255, 0.77) 91.50000214576721%,
+      rgba(255, 255, 255, 0.581) 99.00000095367432%);
   border-radius: 0px 0px 29px 29px;
   width: 262px;
   height: 60px;
@@ -295,18 +362,20 @@ tr {
   left: 75px;
   top: 530px;
 }
+
 .alice-au-pays-des-merveilles {
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Bold", sans-serif;
   font-size: 21px;
-  line-height: 100%;
+  line-height: 50%;
   position: absolute;
   left: 85px;
   top: 550px;
   font-family: fantasy;
-  font-weight: 500;
+  font-weight: 100;
 }
+
 .solar-play-outline {
   width: 53px;
   height: 48px;
@@ -315,6 +384,7 @@ tr {
   top: 575px;
   overflow: visible;
 }
+
 .material-symbols-favorite-outline2 {
   width: 47px;
   height: 47px;
@@ -324,9 +394,13 @@ tr {
   overflow: visible;
 }
 
-.charm-menu-kebab,
-.charm-menu-kebab * {
-  box-sizing: border-box;
+.material-symbols-favorite-outline2:hover {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 285px;
+  top: 395px;
+  overflow: visible;
 }
 
 .charm-menu-kebab {
@@ -335,20 +409,12 @@ tr {
   position: absolute;
   overflow: visible;
 }
-.group-kebab {
-  width: 41px;
-  height: 28px;
-  position: absolute;
-  left: 295px;
-  top: 375px;
-  overflow: visible;
-  cursor: pointer;
-}
 
 .group-37 {
   position: absolute;
   inset: 0;
 }
+
 .ellipse-3 {
   background: #ffffff;
   border-radius: 50%;
@@ -359,6 +425,7 @@ tr {
   top: 36px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .teenyicons-bin-solid {
   width: 38px;
   height: 38px;
@@ -368,15 +435,18 @@ tr {
   overflow: visible;
   cursor: pointer;
 }
+
 .group-38 {
   position: absolute;
   inset: 0;
 }
+
 .group-39 {
   width: 66px;
   height: 66px;
   position: static;
 }
+
 .ellipse-32 {
   background: rgba(176, 113, 255, 0.9);
   border-radius: 50%;
@@ -387,6 +457,7 @@ tr {
   top: 36px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .mi-home {
   width: 49px;
   height: 47px;
@@ -396,4 +467,3 @@ tr {
   overflow: visible;
   cursor: pointer;
 }
-

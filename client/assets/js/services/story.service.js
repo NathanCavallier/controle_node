@@ -27,27 +27,34 @@ export class StoryService {
                 stories.forEach((story, index) => {
                     let cell = document.createElement("td");
 
-                    let imageLink = document.createElement("a");
-                    imageLink.innerHTML = `<img src="${story.imageLink}" alt="${story.title}">`;
+                    let rectangle_5 = document.createElement("div");
+                    rectangle_5.className = "rectangle-5";
 
                     let title = document.createElement("p");
                     title.innerText = story.title;
+                    title.className = "alice-au-pays-des-merveilles";
 
                     let linkToStoryReaderPage = document.createElement("a");
                     linkToStoryReaderPage.href = `./pages/storyRreader.html#${story.id}`;
                     linkToStoryReaderPage.appendChild(title);
 
-                    let favoriteBtn = document.createElement("button");
+                    let image = document.createElement("img");
+                    image.src = story.imageLink;
+                    image.alt = story.title;
+                    image.className = "cardPicture";
 
+                    let bouton_accueil4 = document.createElement("div");
+                    bouton_accueil4.className = "bouton-accueil4";
+
+                    // Bouton pour ajouter aux favoris
+                    let favoriteBtn = document.createElement("button");
                     favoriteBtn.addEventListener("click", () => {
                         let storyService = new StoryService();
-                        storyService.getStoryById(
-                            story.id,
-                            !story.isFavorite
-                        ).then(() => {
-                            story.isFavorite = !story.isFavorite;
-                            favoriteBtn.innerHTML = story.isFavorite ?
-                                `<div class="box-clicable" id="isFavorite">
+                        storyService.getStoryById(story.id, !story.isFavorite)
+                            .then(() => {
+                                story.isFavorite = !story.isFavorite;
+                                favoriteBtn.innerHTML = story.isFavorite ?
+                                    `<div class="box-clicable" id="isFavorite">
                                             <svg class="material-symbols-favorite-outline2" width="47" height="47" viewBox="0 0 47 47"
                                                 fill="white" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -55,7 +62,7 @@ export class StoryService {
                                                     fill="none" />
                                             </svg>
                                             </div>` :
-                                `<div class="box-clicable" id="isFavorite">
+                                    `<div class="box-clicable" id="isFavorite">
                                             <svg class="material-symbols-favorite-outline2" width="47" height="47" viewBox="0 0 47 47"
                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -63,22 +70,44 @@ export class StoryService {
                                                     fill="white" />
                                             </svg>
                                         </div>`;
-                        });
+                            });
                     });
 
+                    // Bouton pour supprimer une histoire
                     let deleteBtn = document.createElement("button");
-                    deleteBtn.innerHTML = "Supprimer";
                     deleteBtn.addEventListener("click", () => {
                         let storyService = new StoryService();
                         storyService.deleteStory(story.id);
                         newTableRow.removeChild(cell);
                     });
+                    deleteBtn.innerHTML = `
+                            <svg class="icomoon-free-bin" width="46" height="41" viewBox="0 0 46 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_131_2)">
+                                    <path
+                                        d="M5.68207 12.8125V38.4375C5.68207 39.8469 6.96053 41 8.5231 41H34.0924C35.655 41 36.9334 39.8469 36.9334 38.4375V12.8125H5.68207ZM14.2052 35.875H11.3641V17.9375H14.2052V35.875ZM19.8872 35.875H17.0462V17.9375H19.8872V35.875ZM25.5693 35.875H22.7283V17.9375H25.5693V35.875ZM31.2514 35.875H28.4103V17.9375H31.2514V35.875ZM37.6437 5.125H28.4103V1.92188C28.4081 1.41279 28.1829 0.925124 27.7838 0.565141C27.3846 0.205157 26.844 0.00202424 26.2796 0L16.3359 0C15.7715 0.00202424 15.2308 0.205157 14.8317 0.565141C14.4326 0.925124 14.2074 1.41279 14.2052 1.92188V5.125H4.97181C4.40715 5.12635 3.86605 5.32927 3.46678 5.6894C3.06751 6.04953 2.84253 6.53758 2.84103 7.04688V10.25H39.7745V7.04688C39.773 6.53758 39.548 6.04953 39.1487 5.6894C38.7494 5.32927 38.2083 5.12635 37.6437 5.125ZM25.5693 5.125H17.0462V2.59581H25.5693V5.125Z"
+                                        fill="red" opacity="0.40" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_131_2">
+                                        <rect width="45.4565" height="41" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>`;
 
-                    cell.appendChild(imageLink);
+                    let group_kebab = document.createElement("div");
+                    group_kebab.className = "group-kebab";
+                    group_kebab.appendChild(deleteBtn);
+
+
+                    cell.appendChild(rectangle_5);
+                    cell.appendChild(image);
+                    cell.appendChild(bouton_accueil4);
                     cell.appendChild(linkToStoryReaderPage);
                     cell.appendChild(title);
                     cell.appendChild(favoriteBtn);
                     cell.appendChild(deleteBtn);
+                    cell.appendChild(group_kebab);
                     newTableRow.appendChild(cell);
 
                     stepper++;
@@ -90,7 +119,7 @@ export class StoryService {
                     }
                 });
 
-                // Bouton (+) pour ajouter une nouvelle histoire, il se déplace toujours à la dernière place de la grille
+                // Bouton (+) pour ajouter une nouvelle histoire, se déplace toujours à la dernière place de la grille
                 let movingButton = document.createElement("div");
                 movingButton.innerHTML = `
                         <div onclick='window.location.href="./pages/newStory.html"' class="box-clicable"
@@ -138,11 +167,24 @@ export class StoryService {
                     story.id,
                     story.title,
                     story.author,
-                    story.numberOfChapters, 
+                    story.numberOfChapters,
                     story.currentChapter,
                     story.storyDescription,
-                    story.author,
-                    story.descr
+                    story.storyGenre,
+                    story.releaseYear,
+                    story.imageLink,
+                    story.storyTags,
+                    story.listOfChapters,
+                    story.listOfChapters,
+                    story.linkToStoryReaderPage,
+                    story.listOfChapter,
+
+                    story.isFavorite,
+                    story.isBookmark,
+                    story.isHitorique,
+                    story.isArchive,
+                    story.isStarred,
+                    story.isFinished
                 );
                 return requestedStory;
             })
