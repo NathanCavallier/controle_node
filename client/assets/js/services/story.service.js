@@ -83,7 +83,7 @@ export class StoryService {
 
                     stepper++;
 
-                    if (stepper === 5 || index === stories.length - 1) {
+                    if (stepper === 5 || index === (stories.length - 1)) {
                         target.appendChild(newTableRow);
                         newTableRow = document.createElement("tr");
                         stepper = 0;
@@ -134,7 +134,16 @@ export class StoryService {
         fetch(request)
             .then(response => response.json())
             .then((story) => {
-                let requestedStory = new Story(story.id, story.title, story.imageLink, story.isFavorite, story.content, story.author, story.descr);
+                let requestedStory = new Story(
+                    story.id,
+                    story.title,
+                    story.author,
+                    story.numberOfChapters, 
+                    story.currentChapter,
+                    story.storyDescription,
+                    story.author,
+                    story.descr
+                );
                 return requestedStory;
             })
             .catch(error => console.log(error));

@@ -1,5 +1,29 @@
 // Class pour la création d'une histoire
 export class Story {
+
+  // Attributs de la classe Story
+  title;
+  author;
+  numberOfChapters;
+  currentChapter;
+  storyContent;
+  storyDescription;
+  storyGenre;
+  releaseYear;
+  imageLink;
+  storyTags;
+  listOfChapters;
+  linkToStoryreaderPage;
+  linkToChapter;
+  isFavorite;
+  isBookmark;
+  isHistorique;
+  isArchive;
+  isStarted;
+  isFinished;
+  id;
+
+  // Constructeur de la classe Story
   constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], linkToStoryreaderPage, linkToChapter,
     currentChapter = 1, id = null, imageLink, releaseYear, storyDescription, storyGenre, listOfChapters, storyTags = [], isFavorite = false,
     isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isFinished = false) {
@@ -25,131 +49,165 @@ export class Story {
     this.isStarted = isStarted;
     this.isFinished = isFinished;
   }
-  getId() {
+
+  // Méthodes de la classe Story
+  get id() {
     return this.id;
   }
-  setId(id) {
+
+  set id(id) {
     this.id = id;
   }
-  getTitle() {
+
+  get title() {
     return this.title;
   }
-  getAuthor() {
-    return this.author;
-  }
-  getNumberOfChapters() {
-    return this.numberOfChapters;
-  }
-  getCurrentChapter() {
-    return this.currentChapter;
-  }
-  getStoryContent() {
-    return this.storyContent;
-  }
-  getStoryDescription() {
-    return this.storyDescription;
-  }
-  getStoryGenre() {
-    return this.storyGenre;
-  }
-  getListOfChapters() {
-    return this.listOfChapters;
-  }
-  setListOfChapters(listOfChapters) {
-    this.listOfChapters = listOfChapters;
-  }
-  getStoryTags() {
-    return this.storyTags;
-  }
-  getLinkToStoryreaderPage() {
-    return this.linkToStoryreaderPage;
-  }
-  setLinkToStoryreaderPage(linkToStoryreaderPage) {
-    this.linkToStoryreaderPage = linkToStoryreaderPage;
-  }
-  setLinkToChapter(linkToChapter) {
-    this.linkToChapter = linkToChapter;
-  }
-  setStoryGenre(storyGenre) {
-    this.storyGenre = storyGenre;
-  }
-  setStoryTags(storyTags) {
-    this.storyTags = storyTags;
-  }
-  setStoryDescription(storyDescription) {
-    this.storyDescription = storyDescription;
-  }
-  getReleaseYear() {
-    return this.releaseYear;
-  }
-  setReleaseYear(releaseYear) {
-    this.releaseYear = releaseYear;
-  }
-  setCurrentChapter(currentChapter) {
-    this.currentChapter = currentChapter;
-  }
-  setStoryContent(storyContent) {
-    this.storyContent = storyContent;
-  }
-  setNumberOfChapters(numberOfChapters) {
-    this.numberOfChapters = numberOfChapters;
-  }
-  setTitle(title) {
+
+  set title(title) {
     this.title = title;
   }
-  setAuthor(author) {
+
+  get author() {
+    return this.author;
+  }
+
+  set author(author) {
     this.author = author;
   }
-  setImageLink(imageLink) {
-    this.imageLink = imageLink;
+
+  get numberOfChapters() {
+    return this.numberOfChapters;
   }
-  getImageLink() {
-    return this.imageLink;
+
+  set numberOfChapters(numberOfChapters) {
+    this.numberOfChapters = numberOfChapters;
   }
-  setCreatedDate(date) {
-    this.releaseYear = date;
+
+  get currentChapter() {
+    return this.currentChapter;
   }
-  getCreatedDate() {
+
+  set currentChapter(currentChapter) {
+    this.currentChapter = currentChapter;
+  }
+
+  get storyContent() {
+    return this.storyContent;
+  }
+
+  set storyContent(storyContent) {
+    this.storyContent = storyContent;
+  }
+
+  get storyDescription() {
+    return this.storyDescription;
+  }
+
+  set storyDescription(storyDescription) {
+    this.storyDescription = storyDescription;
+  }
+
+  get storyGenre() {
+    return this.storyGenre;
+  }
+
+  set storyGenre(storyGenre) {
+    this.storyGenre = storyGenre;
+  }
+
+  get releaseYear() {
     return this.releaseYear;
   }
 
-  setIsFavorite(isFavorite) {
-    this.isFavorite = isFavorite;
+  set releaseYear(releaseYear) {
+    this.releaseYear = releaseYear;
   }
-  getIsFavorite() {
+
+  get imageLink() {
+    return this.imageLink;
+  }
+
+  set imageLink(imageLink) {
+    this.imageLink = imageLink;
+  }
+
+  get storyTags() {
+    return this.storyTags;
+  }
+
+  set storyTags(storyTags) {
+    this.storyTags = storyTags;
+  }
+
+  get listOfChapters() {
+    return this.listOfChapters;
+  }
+
+  set listOfChapters(listOfChapters) {
+    this.listOfChapters = listOfChapters;
+  }
+
+  get linkToStoryreaderPage() {
+    return this.linkToStoryreaderPage;
+  }
+
+  set linkToStoryreaderPage(linkToStoryreaderPage) {
+    this.linkToStoryreaderPage = linkToStoryreaderPage;
+  }
+
+  get linkToChapter() {
+    return this.linkToChapter;
+  }
+
+  set linkToChapter(linkToChapter) {
+    this.linkToChapter = linkToChapter;
+  }
+
+  get isFavorite() {
     return this.isFavorite;
   }
-  setIsBookmark(isBookmark) {
-    this.isBookmark = isBookmark;
+
+  set isFavorite(isFavorite) {
+    this.isFavorite = isFavorite;
   }
-  getIsBookmark() {
+
+  get isBookmark() {
     return this.isBookmark;
   }
-  setIsHistorique(isHistorique) {
-    this.isHistorique = isHistorique;
+
+  set isBookmark(isBookmark) {
+    this.isBookmark = isBookmark;
   }
-  getIsHistorique() {
+
+  get isHistorique() {
     return this.isHistorique;
   }
-  setIsArchive(isArchive) {
-    this.isArchive = isArchive;
+
+  set isHistorique(isHistorique) {
+    this.isHistorique = isHistorique;
   }
-  getIsArchive() {
+
+  get isArchive() {
     return this.isArchive;
   }
-  setIsStarted(isStarted) {
-    this.isStarted = isStarted;
+
+  set isArchive(isArchive) {
+    this.isArchive = isArchive;
   }
-  getIsStarted() {
+
+  get isStarted() {
     return this.isStarted;
   }
-  setIsFinished(isFinished) {
-    this.isFinished = isFinished;
+
+  set isStarted(isStarted) {
+    this.isStarted = isStarted;
   }
-  getIsFinished() {
+
+  get isFinished() {
     return this.isFinished;
   }
-  toString() {
-    return `${this.title} by ${this.author}: ${this.content}`;
+
+  set isFinished(isFinished) {
+    this.isFinished = isFinished;
   }
 }
