@@ -34,7 +34,7 @@ buttonSave.addEventListener('click', async () => {
     }
 
     // Enregistrer l'histoire dans la base de données
-    let response = await newStoryService.saveStory(newStory);
+    let response = newStoryService.createStory(newStory);
 
     if (response.status == 200) {
         window.location.href = '/';
