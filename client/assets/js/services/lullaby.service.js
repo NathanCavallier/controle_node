@@ -49,7 +49,7 @@ export class LullabyService {
    * @param {DOM} target
    * @return {Array<Lullaby>}
    */
-  getLullabies() {
+  getLullabies(target) {
 
     fetch(`https://api.soundcloud.com/playlists/${PLAYLIST_ID}?client_id=${SOUNDCLOUD_CLIENT_ID}`)
       .then(response => response.json())

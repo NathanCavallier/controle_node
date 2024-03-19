@@ -1,7 +1,7 @@
 // Class pour la création d'une histoire
 export class Story {
-  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], 
-    currentChapter = 1, id = null, imageLink, releaseYear, storyDescription , storyGenre, listOfChapters, storyTags = [], isFavorite = false, 
+  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], linkToStoryreaderPage, linkToChapter,
+    currentChapter = 1, id = null, imageLink, releaseYear, storyDescription, storyGenre, listOfChapters, storyTags = [], isFavorite = false,
     isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isFinished = false) {
     this.id = id;
     this.title = title;
@@ -15,6 +15,8 @@ export class Story {
     this.imageLink = imageLink;
     this.storyTags = storyTags;
     this.listOfChapters = listOfChapters;
+    this.linkToStoryreaderPage = linkToStoryreaderPage;
+    this.linkToChapter = linkToChapter;
 
     this.isFavorite = isFavorite;
     this.isBookmark = isBookmark;
@@ -59,6 +61,15 @@ export class Story {
   getStoryTags() {
     return this.storyTags;
   }
+  getLinkToStoryreaderPage() {
+    return this.linkToStoryreaderPage;
+  }
+  setLinkToStoryreaderPage(linkToStoryreaderPage) {
+    this.linkToStoryreaderPage = linkToStoryreaderPage;
+  }
+  setLinkToChapter(linkToChapter) {
+    this.linkToChapter = linkToChapter;
+  }
   setStoryGenre(storyGenre) {
     this.storyGenre = storyGenre;
   }
@@ -101,7 +112,7 @@ export class Story {
   getCreatedDate() {
     return this.releaseYear;
   }
-  
+
   setIsFavorite(isFavorite) {
     this.isFavorite = isFavorite;
   }
