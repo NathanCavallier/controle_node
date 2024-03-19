@@ -2,7 +2,7 @@ import { Story } from "../classes/story.class.js"
 
 
 export class StoryService {
-    constructor() {}
+    constructor() { }
 
     /**
      * Récupérer toutes les histoires
@@ -52,17 +52,20 @@ export class StoryService {
                         target.appendChild(newTabbleRow);
                     } else {
                         if (stepper < 6) {
+                            let image = document.createElement("img");
                             let imageLink = document.createElement("a");
                             let title = document.createElement("p");
                             let isFavorite = document.createElement("p");
                             let favoriteBtn = document.createElement("button");
                             let deleteBtn = document.createElement("button");
+                            image.src = story.imageLink;
                             imageLink.href = story.imageLink;
                             title.innerHTML = story.title;
                             isFavorite.innerHTML = story.isFavorite;
                             favoriteBtn.innerHTML = "Favoris";
                             deleteBtn.innerHTML = "Supprimer";
 
+                            cell.appendChild(image);
                             cell.appendChild(imageLink);
                             cell.appendChild(title);
                             cell.appendChild(favoriteBtn);
@@ -81,32 +84,88 @@ export class StoryService {
 
     /**
      * Récupérer une histoire par son titre (title)
-     * @param {Number} id
+     * @param {String} id
      * @return {Story}
      */
     getStoryById(id) {
+        let headers = new Headers();
+        headers.append("Accept", "application/json");
+        headers.append("Content-Type", "application/json");
+        let url = `api/stories/${id}`;
+        let request = new Request(url, {
+            method: "GET",
+            headers: headers
+        });
 
+        fetch(request)
+            .then(response => response.json())
+        .then((story) => {
+            let requestedStory = new Story(story.id, story.title, story.imageLink, story.isFavorite);
+            return requestedStory;
+        })
+            .catch(error => console.log(error));
     }
 
     /**
      * Créer une nouvelle histoire
      * @param {Story} story
-     * @return {Story}
      */
     createStory(story) {
+        let headers = new Headers();
+        headers.append("Accept", "application/json");
+        headers.append("Content-Type", "application/json");
+        let url = "api/stories";
+        let request = new Request(url, {
+            method: "POST",
+            headers: headers,
+            mode: "cors",
+            cache: "default",
+            body: JSON.stringify(story)
+        });
 
+        fetch(request)
+            .then(response => response.json())
+            .then(story => console.log(story))
+            .catch(error => console.log(error));
     }
 
     /**
      * Mettre à jour une histoire
      * @param {Story} story
-     * @return {Story}
      */
-    updateStory(story) {}
+    updateStory(story) {
+        let headers = new Headers();
+        headers.append("Accept", "application/json");
+        headers.append("Content-Type", "application/json");
+        let url = `api/stories/${story.id}`;
+        let request = new Request(url, {
+            method: "PUT",
+            headers: headers,
+            body: JSON.stringify(story)
+        });
+
+        fetch(request)
+            .then(response => response.json())
+            .then(story => console.log(story))
+            .catch(error => console.log(error));
+    }
 
     /**
      * Supprimer une histoire
-     * @param {Number} id
+     * @param {String} id
      */
-    deleteStory(id) {}
+    deleteStory(id) {
+        let headers = new Headers();
+        headers.append("Accept", "application/json");
+        headers.append("Content-Type", "application/json");
+        let url = `api/stories/${id}`;
+        let request = new Request(url, {
+            method: "DELETE",
+            headers: headers
+        });
+
+        fetch(request)
+            .then(response => console.log(response))
+            .catch(error => console.log(error));
+     }
 }

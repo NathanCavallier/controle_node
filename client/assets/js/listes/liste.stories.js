@@ -1,7 +1,7 @@
 import { StoryService } from "../services/story.service";
 
 
-let tbody = document.querySelector('#storyList');
-const story = new StoryService();
+let listeStories = document.querySelector('#storyList');
+const s_service = new StoryService();
 
-story.getAll(tbody);
+s_service.getAllStories(listeStories);

@@ -655,8 +655,8 @@ textarea:focus {
   font-size: 25px;
   font-weight: 400;
   position: absolute;
-  left: 1219px;
-  top: 935px;
+  left: 1140px;
+  top: 925px;
   cursor: pointer;
 }
 
@@ -664,8 +664,8 @@ textarea:focus {
   width: 44px;
   height: 41px;
   position: absolute;
-  left: 1173px;
-  top: 931px;
+  left: 1273px;
+  top: 932px;
   overflow: visible;
 }
 
@@ -694,8 +694,8 @@ textarea:focus {
   font-size: 28px;
   font-weight: 400;
   position: absolute;
-  left: 1035px;
-  top: 934px;
+  left: 938px;
+  top: 925px;
   cursor: pointer;
 }
 
@@ -703,7 +703,7 @@ textarea:focus {
   width: 52.96px;
   height: 52px;
   position: absolute;
-  left: 983px;
+  left: 1050px;
   top: 928px;
   overflow: visible;
 }

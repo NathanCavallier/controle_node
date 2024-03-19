@@ -15,18 +15,18 @@ buttonSave.addEventListener('click', async () => {
     newStory.storyGenre = document.getquerySelector('#storyGenre').value;
     newStory.releaseYear = document.getquerySelector('#releaseYear').value;
     newStory.imageLink = document.getquerySelector('#imageLink').value;
-    newStory.storyTags = document.getquerySelector('#storyTags').value;
+    newStory.storyTags = document.querySelector('#storyTags').value;
 
     // Vérifier que tous les champs sont remplis
-    if (!newStory.title || !newStory.author || !newStory.numberOfChapters || 
-        !newStory.currentChapter || !newStory.storyContent || !newStory.storyDescription || 
-        !newStory.releaseYear || !newStory.imageLink) {
+    if (!newStory.title || !newStory.author || !newStory.numberOfChapters ||
+        !newStory.storyContent || !newStory.storyDescription ||
+        !newStory.releaseYear) {
         alert('Veuillez remplire tous les champs !');
         return;
     }
 
     // Vérifier si l'histoire existe déjà
-    let existingStory = await newStoryService.getStoryByTitle(newStory.title);
+    let existingStory = newStoryService.getStoryById(newStory.title);
 
     if (existingStory) {
         alert('Cette histoire existe déjà !');
