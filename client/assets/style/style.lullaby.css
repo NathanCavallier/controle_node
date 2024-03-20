@@ -70,7 +70,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 82%;
   height: 60%;
   position: absolute;
-  left: 51px;
+  left: 90px;
   top: 352px;
   box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
   overflow-y: auto;
@@ -80,10 +80,10 @@ background: #E8E8E8; /* Couleur de la poignée */
   border-style: solid;
   border-color: rgba(162, 162, 162, 0.68);
   border-width: 1px;
-  width: 60%;
+  width: 58%;
   height: 55%;
   position: absolute;
-  left: 63px;
+  left: 108px;
   top: 378px;
   overflow-y: scroll;
 }
@@ -289,6 +289,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
 }
 .bouton-accueil5 {
+  margin-left: -7%;
+  margin-top: -40%;
   background: linear-gradient(
     269.94deg,
     rgba(255, 255, 255, 1) 0%,
@@ -297,7 +299,7 @@ background: #E8E8E8; /* Couleur de la poignée */
     rgba(255, 255, 255, 0.21) 99.00000095367432%
   );
   border-radius: 0px 46px 46px 0px;
-  width: 849px;
+  width: 829px;
   height: 76px;
   position: absolute;
   left: 150px;
@@ -318,19 +320,23 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
 }
 .rectangle-5 {
+  margin-left: -7%;
+  margin-top: -40%;
   background: rgba(246, 246, 246, 0.24);
   border-radius: 46px;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.98);
   border-width: 1px;
-  width: 926px;
+  width: 900px;
   height: 76px;
   position: absolute;
-  left: 73px;
+  left: 80px;
   top: 395px;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .titre-du-morceau {
+  margin-left: -7%;
+  margin-top: -40%;
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Regular", sans-serif;
@@ -343,6 +349,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 409px;
 }
 .solar-play-outline {
+  margin-left: -7%;
+  margin-top: -40%;
   width: 53px;
   height: 48px;
   position: absolute;
@@ -352,6 +360,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .material-symbols-light-favorite-outline {
+  margin-left: -7%;
+  margin-top: -40%;
   width: 58px;
   height: 58px;
   position: absolute;
@@ -361,6 +371,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .teenyicons-bin-outline {
+  margin-left: -7%;
+  margin-top: -40%;
   width: 47px;
   height: 52px;
   position: absolute;
@@ -370,6 +382,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .humbleicons-download {
+  margin-left: -7%;
+  margin-top: -40%;
   width: 74px;
   height: 69px;
   position: absolute;
@@ -385,13 +399,13 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 287px;
   position: absolute;
   left: 1053px;
-  top: 685px;
+  top: 485px;
 }
 .group-46 {
   height: auto;
   position: absolute;
   left: 1053px;
-  top: 890px;
+  top: 780px;
   overflow: visible;
 }
 .group-81 {
