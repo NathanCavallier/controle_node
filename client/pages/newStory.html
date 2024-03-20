@@ -66,19 +66,19 @@
                 fill="#B071FF" fill-opacity="0.9" />
         </svg>
 
-<input type="file" id="image-upload" accept="image/*" placeholder=".">
-        <div id="dropzone" class="rectangle-6" onclick="document.getElementById('image-upload').click()"
-            title="Ajouter l'image de couverture">
-            <div>
-                <svg class="union" width="121" height="123" viewBox="0 0 121 123" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M60.9844 0.269287C51.9123 0.269287 44.558 7.62361 44.558 16.6957V44.6966H17.7235C8.47509 44.6966 0.977783 52.1939 0.977783 61.4423C0.977783 70.6907 8.47508 78.188 17.7235 78.188H44.558V106.189C44.558 115.261 51.9123 122.615 60.9844 122.615C70.0564 122.615 77.4107 115.261 77.4107 106.189V78.188H104.245C113.494 78.188 120.991 70.6907 120.991 61.4423C120.991 52.1939 113.494 44.6966 104.245 44.6966H77.4107V16.6957C77.4107 7.62363 70.0564 0.269287 60.9844 0.269287Z"
-                        fill="#D9D9D9" fill-opacity="0.48" />
-                </svg>
-                <div class="photo-de-l-histoire">Image de couverture</div>
+        <input type="file" id="image-upload" accept="image/*" title="Image de couverture">
+            <div id="dropzone" class="rectangle-6" onclick="document.getElementById('image-upload').click()"
+                title="Ajouter l'image de couverture">
+                <div>
+                    <svg class="union" width="121" height="123" viewBox="0 0 121 123" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M60.9844 0.269287C51.9123 0.269287 44.558 7.62361 44.558 16.6957V44.6966H17.7235C8.47509 44.6966 0.977783 52.1939 0.977783 61.4423C0.977783 70.6907 8.47508 78.188 17.7235 78.188H44.558V106.189C44.558 115.261 51.9123 122.615 60.9844 122.615C70.0564 122.615 77.4107 115.261 77.4107 106.189V78.188H104.245C113.494 78.188 120.991 70.6907 120.991 61.4423C120.991 52.1939 113.494 44.6966 104.245 44.6966H77.4107V16.6957C77.4107 7.62363 70.0564 0.269287 60.9844 0.269287Z"
+                            fill="#D9D9D9" fill-opacity="0.48" />
+                    </svg>
+                    <div class="photo-de-l-histoire">Image de couverture</div>
+                </div>
             </div>
-        </div>
         </input>
         <div class="rectangle-19"></div>
         <input id="title" class="titre" placeholder="Saisir le nom de l'histoire..." />
@@ -133,8 +133,7 @@
                     fill="#607AFF" fill-opacity="0.9" />
             </svg>
         </div>
-        <button type="button" class="bouton-accueil2" id="annuler"
-            onclick='window.location.href="../"'>Annuler</button>
+        <button type="button" class="bouton-accueil2" id="annuler" onclick='window.location.href="../"'>Annuler</button>
         <svg class="material-symbols-light-cancel" width="53" height="52" viewBox="0 0 53 52" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -173,7 +172,7 @@
 
                     <div class="group-72">
                         <div class="rectangle-24"></div>
-                        <input id="titre" class="titre-de-l-histoire" placeholder="Titre du chapitre ..." />
+                        <input id="title" class="titre-de-l-histoire" placeholder="Titre du chapitre ..." />
                     </div>
 
                     <div class="group-71">
@@ -248,8 +247,11 @@
 
         // Fonction qui permet de supprimer un chapitre en fonction du numéro du chapitre
         function deleteChapter(chapterNumber) {
-            var li = document.getElementById("editableStoryZone");
-            li.removeChild(li.lastChild);
+            if (getNumberOfChapters() > 1) {
+                var li = document.getElementById("editableStoryZone").children[chapterNumber - 1];
+                document.getElementById("editableStoryZone").removeChild(li);
+                decreaseNumberOfChapters();
+            }
         }
 
         // Fonction qui permet d'afficher un nouveau chapitre en l'ajoutant à la page

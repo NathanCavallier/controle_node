@@ -1,8 +1,10 @@
-import { Story } from "../classes/story.class.js"
+import {
+    Story
+} from "../classes/story.class.js"
 
 
 export class StoryService {
-    constructor() { }
+    constructor() {}
 
     /**
      * Récupérer toutes les histoires
@@ -143,7 +145,93 @@ export class StoryService {
 
     }
 
+    /**
+     * Récupérer toutes les histoires favorites
+     * @param {DOM} target
+     * @return {Array<Story>}
+     */
+    getAllFavoriteStories(target) {
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        let url = "api/stories";
+        let request = new Request(url, {
+            method: "GET",
+            headers: headers
+        });
+        let stories = [];
 
+        fetch(request)
+            .then(response => response.json())
+            .then((data) => {
+                data.forEach((story) => {
+                    if (story.isFavorite) {
+                        stories.push(story);
+                    }
+                });
+                this.displayStories(stories, target);
+            })
+            .catch(error => console.log(error));
+    }
+
+
+    /**
+     * Récupérer les histoires déjà lues (Historique)
+     * @param {DOM} target
+     * @return {Array<Story>}
+     * 
+     */
+     getAllReadStories(target) {
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        let url = "api/stories";
+        let request = new Request(url, {
+            method: "GET",
+            headers: headers
+        });
+        let stories = [];
+
+        fetch(request)
+            .then(response => response.json())
+            .then((data) => {
+                data.forEach((story) => {
+                    if (story.isHistorique) {
+                        stories.push(story);
+                    }
+                });
+                this.displayStories(stories, target);
+            })
+            .catch(error => console.log(error));
+     }
+
+     /**
+     * Récupérer les histoires mise à la corbeille
+     * @param {DOM} target
+     * @return {Array<Story>}
+     */
+     getAllTrashStories(target) {
+        let headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        let url = "api/stories";
+        let request = new Request(url, {
+            method: "GET",
+            headers: headers
+        });
+        let stories = [];
+
+        fetch(request)
+            .then(response => response.json())
+            .then((data) => {
+                data.forEach((story) => {
+                    if (story.isArchive) {
+                        stories.push(story);
+                    }
+                });
+                this.displayStories(stories, target);
+            })
+            .catch(error => console.log(error));
+     }
+     
+     
 
     /**
      * Récupérer une histoire par son titre (title)

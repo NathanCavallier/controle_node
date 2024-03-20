@@ -7,12 +7,6 @@ a {
   text-decoration: none;
 }
 
-.page-favoris {
-  background: #ffffff;
-  height: 1024px;
-  position: relative;
-  overflow: hidden;
-}
 
 h1, h2, h3 {
   font-family: 'Indie Flower', cursive;
@@ -84,7 +78,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 80.7%;
   height: 60%;
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 35.2%;
   box-shadow: 4px -1px 16px 2px rgba(0, 0, 0, 0.16);
 }
@@ -95,21 +89,13 @@ background: #E8E8E8; /* Couleur de la poignée */
 .rectangle-17 {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 31px 31px 0px 0px;
-  width: 1342px;
-  height: 75px;
+  width: 80.7%;
+  height: 8%;
   position: absolute;
-  left: 51px;
-  top: 352px;
+  left: 7%;
+  top: 35.2%;
 }
-.line-5 {
-  width: 52.01px;
-  height: 0px;
-  position: absolute;
-  left: 720.93px;
-  top: 363px;
-  transform: translate(-1.5px, -1.5px);
-  overflow: visible;
-}
+
 .group-54 {
   width: 181.29px;
   height: 38px;
@@ -124,17 +110,11 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 310.55px;
-  top: 369px;
+  top: 320px;
   width: 124.74px;
 }
-.material-symbols-auto-stories-outline {
-  width: 49px;
-  height: 38px;
-  position: absolute;
-  left: 254px;
-  top: 366px;
-  overflow: visible;
-}
+
+
 .group-53 {
   width: 188.39px;
   height: 40px;
@@ -149,17 +129,10 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 981.55px;
-  top: 369px;
+  top: 320px;
   width: 141.85px;
 }
-.mingcute-music-3-line {
-  width: 42px;
-  height: 40px;
-  position: absolute;
-  left: 935px;
-  top: 367px;
-  overflow: hidden;
-}
+
 .group {
   width: 100%;
   height: 100%;
@@ -202,7 +175,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 57px;
   position: absolute;
   left: 1220px;
-  top: 269px;
+  top: 210px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .historique {
   color: rgba(176, 113, 255, 0.9);
@@ -212,16 +186,18 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 1267px;
-  top: 278px;
+  top: 220px;
 }
+
 .mdi-recent {
   width: 36px;
   height: 36px;
   position: absolute;
   left: 1228px;
-  top: 279px;
+  top: 220px;
   overflow: visible;
 }
+
 .group-32 {
   position: absolute;
   inset: 0;
@@ -233,7 +209,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 57px;
   position: absolute;
   left: 1034px;
-  top: 269px;
+  top: 210px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .favoris {
@@ -244,22 +220,22 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 1102px;
-  top: 278px;
+  top: 220px;
 }
 .material-symbols-favorite-outline {
   width: 46px;
   height: 41px;
   position: absolute;
   left: 1047px;
-  top: 279px;
+  top: 220px;
   overflow: visible;
 }
 .material-symbols-favorite-outline2 {
   width: 46px;
   height: 41px;
   position: absolute;
-  left: 526px;
-  top: 54px;
+  left: 426px;
+  top: 38px;
   overflow: visible;
 }
 .group-45 {
@@ -273,7 +249,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 57px;
   position: absolute;
   left: 836px;
-  top: 269px;
+  top: 210px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .berceuses2 {
@@ -284,7 +260,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 877px;
-  top: 277px;
+  top: 220px;
   width: 143px;
 }
 .mingcute-music-3-line2 {
@@ -292,7 +268,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 40px;
   position: absolute;
   left: 842px;
-  top: 277px;
+  top: 220px;
   overflow: hidden;
 }
 .group2 {
@@ -334,7 +310,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   height: 57px;
   position: absolute;
   left: 637px;
-  top: 269px;
+  top: 210px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .histoires2 {
@@ -345,14 +321,14 @@ background: #E8E8E8; /* Couleur de la poignée */
   font-weight: 400;
   position: absolute;
   left: 701px;
-  top: 279px;
+  top: 220px;
 }
 .material-symbols-auto-stories-outline2 {
   width: 49px;
   height: 38px;
   position: absolute;
-  left: 647px;
-  top: 277px;
+  left: 645px;
+  top: 220px;
   overflow: visible;
 }
 .rectangle-16 {
@@ -628,6 +604,6 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 78px;
   height: 57px;
   position: absolute;
-  left: 510px;
-  top: 45px;
+  left: 410px;
+  top: 30px;
 }

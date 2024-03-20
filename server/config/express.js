@@ -4,7 +4,7 @@ const routes = require('./index');
 const app = express();
 
 
-app.use('/assets', express.static(path.join(__dirname, '../../client/assets')));
+app.use('/client', express.static(path.join(__dirname, '../../client')));
 app.use('/pages', express.static(path.join(__dirname, '../../client/pages')));
 app.use(express.json());
 
