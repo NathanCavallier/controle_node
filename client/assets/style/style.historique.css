@@ -398,6 +398,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 279px;
 }
 .material-symbols-auto-stories-outline2 {
+  margin-left: -115%;
+  margin-top: -70%;
   width: 49px;
   height: 38px;
   position: absolute;
@@ -415,6 +417,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 62px;
   top: 455px;
+  overflow-y: scroll;
 }
 .rectangle-22 {
   border-radius: 46px;
@@ -426,6 +429,7 @@ background: #E8E8E8; /* Couleur de la poignée */
   position: absolute;
   left: 734px;
   top: 455px;
+  overflow-y: scroll;
 }
 .group-37 {
   position: absolute;
@@ -483,6 +487,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   inset: 0;
 }
 .rectangle-5 {
+  margin-left: -115%;
+  margin-top: -70%;
   background: rgba(246, 246, 246, 0.24);
   border-radius: 46px;
   border-style: solid;
@@ -496,6 +502,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .bouton-accueil5 {
+  margin-left: -115%;
+  margin-top: -70%;
   background: #ffffff;
   border-radius: 0px 46px 46px 0px;
   width: 528px;
@@ -505,6 +513,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 465px;
 }
 .titre-du-morceau {
+  margin-left: -115%;
+  margin-top: -70%;
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Regular", sans-serif;
@@ -517,6 +527,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 261.68px;
 }
 .material-symbols-light-favorite-outline {
+  margin-left: -115%;
+  margin-top: -70%;
   width: 45.72px;
   height: 43px;
   position: absolute;
@@ -526,6 +538,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .teenyicons-bin-outline {
+  margin-left: -115%;
+  margin-top: -70%;
   width: 36.97px;
   height: 39px;
   position: absolute;
@@ -535,6 +549,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .humbleicons-download {
+  margin-left: -115%;
+  margin-top: -70%;
   width: 58.37px;
   height: 52px;
   position: absolute;
@@ -586,6 +602,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   inset: 0;
 }
 .rectangle-52 {
+  margin-left: -10%;
+  margin-top: -70%;
   background: rgba(246, 246, 246, 0.24);
   border-radius: 46px;
   border-style: solid;
@@ -599,6 +617,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .bouton-accueil6 {
+  margin-left: -10%;
+  margin-top: -70%;
   background: #ffffff;
   border-radius: 0px 46px 46px 0px;
   width: 540.44px;
@@ -608,6 +628,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   top: 464px;
 }
 .titre-de-l-histoire {
+  margin-left: -10%;
+  margin-top: -70%;
   color: rgba(176, 113, 255, 0.9);
   text-align: left;
   font-family: "Judson-Regular", sans-serif;
@@ -620,6 +642,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 261.68px;
 }
 .material-symbols-light-favorite-outline2 {
+  margin-left: -10%;
+  margin-top: -70%;
   width: 45.72px;
   height: 43px;
   position: absolute;
@@ -628,6 +652,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
 }
 .teenyicons-bin-outline2 {
+  margin-left: -10%;
+  margin-top: -70%;
   width: 36.97px;
   height: 39px;
   position: absolute;
@@ -636,6 +662,8 @@ background: #E8E8E8; /* Couleur de la poignée */
   overflow: visible;
 }
 .humbleicons-download2 {
+  margin-left: -10%;
+  margin-top: -70%;
   width: 58.37px;
   height: 52px;
   position: absolute;
