@@ -339,8 +339,9 @@ background: #E8E8E8; /* Couleur de la poignée */
   width: 38.5%;
   height:47%;
   position: absolute;
-  left: 62px;
-  top: 455px;
+  left: 122px;
+  top: 395px;
+  overflow-y: scroll;
 }
 .rectangle-22 {
   border-radius: 46px;

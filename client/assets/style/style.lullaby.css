@@ -80,11 +80,12 @@ background: #E8E8E8; /* Couleur de la poignée */
   border-style: solid;
   border-color: rgba(162, 162, 162, 0.68);
   border-width: 1px;
-  width: 58%;
+  width: 60%;
   height: 55%;
   position: absolute;
   left: 63px;
   top: 378px;
+  overflow-y: scroll;
 }
 .rectangle-21 {
   background: rgba(88, 54, 130, 0);
