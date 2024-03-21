@@ -1,5 +1,5 @@
 import { Story } from "../classes/story.class";
-import { StoryService } from "../services/story.service";
+import { StoryService } from "./story.service";
 
 let buttonSave = document.querySelector('#enregistrer');
 let imageInput = document.querySelector('#upload-image');

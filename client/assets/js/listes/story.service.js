@@ -5,7 +5,7 @@ export class StoryService {
     constructor() { }
 
     /**
-     * Sauvegarder une image sur le serveur express (uploads) 
+     * Sauvegarder une image sur le serveur express (/uploads) 
      * et retourner son adresse.
      * @param {FormData} formData
      * @return {Promise<String>}
@@ -15,11 +15,11 @@ export class StoryService {
             method: 'POST',
             body: formData
         })
-        .then(response => response.text())
-        .then(data => {
-            return data;
-        })
-        .catch(error => console.error(error));
+            .then(response => response.text())
+            .then(data => {
+                return data;
+            })
+            .catch(error => console.error(error));
     }
 
     /**
@@ -38,11 +38,15 @@ export class StoryService {
         });
 
         fetch(request)
-            .then(response => response.json())
-            .then(stories => {
+            .then(response => () => {
+                if (response.ok) {
+                    return response.json();
+                }
+            })
+            .then((stories) => {
                 let newTableRow = document.createElement("tr");
                 let stepper = 0;
-                stories.forEach((story, index) => {
+                Object.values(stories).forEach((story, index) => {
                     let cell = document.createElement("td");
 
                     let rectangle_5 = document.createElement("div");
@@ -135,8 +139,7 @@ export class StoryService {
                         newTableRow = document.createElement("tr");
                         stepper = 0;
                     }
-                });
-
+                })
                 // Bouton (+) pour ajouter une nouvelle histoire, se déplace toujours à la dernière place de la grille
                 let movingButton = document.createElement("div");
                 movingButton.innerHTML = `
@@ -214,24 +217,15 @@ export class StoryService {
                     story.id,
                     story.title,
                     story.author,
-                    story.numberOfChapters,
                     story.currentChapter,
+                    story.storyContent,
                     story.storyDescription,
                     story.storyGenre,
                     story.releaseYear,
                     story.imageLink,
-                    story.storyTags,
-                    story.listOfChapters,
-                    story.listOfChapters,
                     story.linkToStoryReaderPage,
-                    story.listOfChapter,
 
                     story.isFavorite,
-                    story.isBookmark,
-                    story.isHitorique,
-                    story.isArchive,
-                    story.isStarred,
-                    story.isFinished
                 );
                 return requestedStory;
             })

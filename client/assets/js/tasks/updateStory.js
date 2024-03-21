@@ -1,4 +1,4 @@
-import { StoryService } from "../services/story.service";
+import { StoryService } from "../listes/story.service";
 import { Story } from "../classes/story.class";
 
 
@@ -7,21 +7,54 @@ let releaseYear = document.querySelector("#releaseYear");
 let author = document.querySelector("#author");
 let storyGenre = document.querySelector("#storyGenre");
 let storyDescription = document.querySelector("#storyDescription");
-let numberOfChapters = getNumberOfChapters();
-let chapters = [];
+let storyContent = document.querySelector("#storyContent");
+let chapterName = document.querySelector("#chapterName");
+let imageLink = document.querySelector("#imageLink");
 
-for (var i = 1; i <= story.numberOfChapters; i++) {
-    let chapter = {
-        "title": document.querySelector("#title").value,
-        "content": document.querySelector("#storyContent" + i).value
-    };
-    chapters.push(chapter);
-}
-
-let myId = window.location.hash.substring(1);
-
-let story = new Story(myId, title.value, releaseYear.value, author.value, storyGenre.value, storyDescription.value, numberOfChapters, chapters);
+let storyId = window.location.hash.substring(1);
 let storyService = new StoryService();
-storyService.updateStory(story);
-alert("Story updated successfully!");
-window.location.href = "home.html";
+
+let story = storyService.getStoryById(storyId);
+story.then((story) => {
+    title.value = story.title;
+    releaseYear.value = story.releaseYear;
+    author.value = story.author;
+    storyGenre.value = story.storyGenre;
+    storyDescription.value = story.storyDescription;
+    storyContent.value = story.storyContent;
+    chapterName.value = story.chapterName;
+    imageLink.value = story.imageLink;
+})
+    .catch((error) => {
+        alert("Une erreur s'est produite lors du chargement de l'histoire !");
+        console.log(error);
+    });
+
+// Pour mettre à jour l'image
+let imageInput = document.querySelector('#upload-image');
+let formData = new FormData();
+imageInput.addEventListener('change', (e) => {
+    formData.append('image', imageInput.files[0]);
+    storyService.uploadImage(formData)
+        .then((response) => {
+            imageLink.value = response;
+        })
+        .catch((error) => {
+            alert("Une erreur s'est produite lors de la mise à jour de l'image !");
+            console.log(error);
+        });
+});
+
+let saveButton = document.querySelector("#enregistrer");
+saveButton.addEventListener("click", () => {
+    let updatedStory = new Story(storyId, title.value, releaseYear.value, author.value, storyGenre.value, storyDescription.value, storyContent.value, chapterName.value, imageLink.value);
+    storyService.updateStory(updatedStory)
+        .then(() => {
+            alert("L'histoire a été mise à jour avec succès !");
+        })
+        .catch((error) => {
+            alert("Une erreur s'est produite lors de la mise à jour de l'histoire !");
+            console.log(error);
+        });
+});
+

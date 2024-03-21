@@ -1,4 +1,4 @@
-import { StoryService } from "../services/story.service";
+import { StoryService } from "./story.service.js";
 
 
 let listeStories = document.querySelector('#storyList');

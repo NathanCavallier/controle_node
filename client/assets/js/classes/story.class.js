@@ -2,6 +2,7 @@
 export class Story {
 
   // Attributs de la classe Story
+  id;
   title;
   author;
   numberOfChapters;
@@ -11,43 +12,42 @@ export class Story {
   storyGenre;
   releaseYear;
   imageLink;
+  linkToStoryreaderPage;
+  isFavorite;
+  /*
   storyTags;
   listOfChapters;
-  linkToStoryreaderPage;
   linkToChapter;
-  isFavorite;
   isBookmark;
   isHistorique;
   isArchive;
   isStarted;
   isFinished;
-  id;
+  */
 
   // Constructeur de la classe Story
-  constructor(title, author, numberOfChapters = 1, currentChapter = 1, storyContent = [], linkToStoryreaderPage, linkToChapter,
-    currentChapter = 1, id = null, imageLink, releaseYear, storyDescription, storyGenre, listOfChapters, storyTags = [], isFavorite = false,
-    isBookmark = false, isHistorique = false, isArchive = false, isStarted = false, isFinished = false) {
+  constructor(id = null, title, author, currentChapter, storyContent, linkToStoryreaderPage, imageLink, releaseYear, storyDescription, storyGenre, isFavorite = false) {
     this.id = id;
     this.title = title;
     this.author = author;
-    this.numberOfChapters = numberOfChapters;
+    //this.numberOfChapters = numberOfChapters;
     this.currentChapter = currentChapter;
     this.storyContent = storyContent;
     this.storyDescription = storyDescription;
     this.storyGenre = storyGenre;
     this.releaseYear = releaseYear;
     this.imageLink = imageLink;
-    this.storyTags = storyTags;
-    this.listOfChapters = listOfChapters;
+    //this.storyTags = storyTags;
+    //this.listOfChapters = listOfChapters;
     this.linkToStoryreaderPage = linkToStoryreaderPage;
-    this.linkToChapter = linkToChapter;
+    //this.linkToChapter = linkToChapter;
 
     this.isFavorite = isFavorite;
-    this.isBookmark = isBookmark;
-    this.isHistorique = isHistorique;
-    this.isArchive = isArchive;
-    this.isStarted = isStarted;
-    this.isFinished = isFinished;
+    //this.isBookmark = isBookmark;
+    //this.isHistorique = isHistorique;
+    //this.isArchive = isArchive;
+    //this.isStarted = isStarted;
+    //this.isFinished = isFinished;
   }
 
   // Méthodes de la classe Story

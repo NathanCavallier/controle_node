@@ -1,10 +1,9 @@
-import { Story } from "../classes/story.class";
 import { StoryService } from "../services/story.service";
 
-let storyTitle = document.getElementById("bookName");
-let currentChapter = document.getElementById("currentChapter");
-let storyContent = document.getElementById("storyContent");
-let storyImage = document.getElementById("storyImage");
+let storyTitle = document.querySelector("#bookName");
+let currentChapter = document.querySelector("#currentChapter");
+let storyContent = document.querySelector("#storyContent");
+let storyImage = document.querySelector("#storyImage");
 
 let storyService = new StoryService();
 let _id = window.location.hash.substring(1);
@@ -15,21 +14,21 @@ story.then((story) => {
     storyTitle.innerHTML = story.title;
     currentChapter.innerHTML = story.currentChapter;
     storyContent.innerHTML = story.content;
-    storyImage.src = story.image;
+    storyImage.src = story.imageLink;
     storyImage.alt = story.title;
     storyImage.title = story.title;
     storyImage.style.display = "block";
 });
 
 // Bouton pour passer au chapitre suivant
-let nextChapterButton = document.getElementById("nextChapterButton");
+let nextChapterButton = document.querySelector("#nextChapterButton");
 nextChapterButton.addEventListener("click", () => {
     let nextChapter = storyService.getStoryById(_id);
     nextChapter.then((chapter) => {
         storyTitle.innerHTML = chapter.title;
         currentChapter.innerHTML = chapter.currentChapter;
         storyContent.innerHTML = chapter.content;
-        storyImage.src = chapter.image;
+        storyImage.src = chapter.imageLink;
         storyImage.alt = chapter.title;
         storyImage.title = chapter.title;
         storyImage.style.display = "block";
@@ -37,14 +36,14 @@ nextChapterButton.addEventListener("click", () => {
 });
 
 // Bouton pour revenir au chapitre précédent
-let previousChapterButton = document.getElementById("previousChapterButton");
+let previousChapterButton = document.querySelector("#previousChapterButton");
 previousChapterButton.addEventListener("click", () => {
     let previousChapter = storyService.getStoryById(_id);
     previousChapter.then((chapter) => {
         storyTitle.innerHTML = chapter.title;
         currentChapter.innerHTML = chapter.currentChapter;
         storyContent.innerHTML = chapter.content;
-        storyImage.src = chapter.image;
+        storyImage.src = chapter.imageLink;
         storyImage.alt = chapter.title;
         storyImage.title = chapter.title;
         storyImage.style.display = "block";
@@ -52,7 +51,7 @@ previousChapterButton.addEventListener("click", () => {
 });
 
 // Bouton pour mettre l'histoire en favoris / ne plus la mettre en favoris
-let favoriteButton = document.getElementById("favoriteButton");
+let favoriteButton = document.getElementById("#favoriteButton");
 favoriteButton.addEventListener("click", () => {
     storyService.toggleFavorite(_id);
     if (story.isFavorite) {
