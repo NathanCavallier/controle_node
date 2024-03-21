@@ -67,14 +67,15 @@
 
     <div id="dropzone" class="rectangle-6" title="Ajouter l'image de couverture">
         <div>
-            <input type="file" id="image-upload" accept="image/*" placeholder="Ajouter une image..."
-                title="Image de couverture"></input>
-            <svg class="union" width="121" height="123" viewBox="0 0 121 123" fill="none"
+            <input type="file" id="image-upload" onload="hideUnion()" accept="image/*"
+                placeholder="Ajouter une image..." title="Image de couverture"></input>
+            <svg id="union" class="union" width="121" height="123" viewBox="0 0 121 123" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M60.9844 0.269287C51.9123 0.269287 44.558 7.62361 44.558 16.6957V44.6966H17.7235C8.47509 44.6966 0.977783 52.1939 0.977783 61.4423C0.977783 70.6907 8.47508 78.188 17.7235 78.188H44.558V106.189C44.558 115.261 51.9123 122.615 60.9844 122.615C70.0564 122.615 77.4107 115.261 77.4107 106.189V78.188H104.245C113.494 78.188 120.991 70.6907 120.991 61.4423C120.991 52.1939 113.494 44.6966 104.245 44.6966H77.4107V16.6957C77.4107 7.62363 70.0564 0.269287 60.9844 0.269287Z"
                     fill="#D9D9D9" fill-opacity="0.48" />
             </svg>
+            <img id="uploaded-image" onload="hideUnion()" src="" alt="Image de couverture" />
             <div class="photo-de-l-histoire"></div>
         </div>
     </div>
@@ -183,6 +184,11 @@
     </article>
 
     <script>
+        // Fonction pour masque l'icone "+" après le chargement de l'image
+        function hideUnion() {
+            document.getElementById('union').style.display = 'none';
+        }
+
         // Fonction qui permet de récupérer le nombre de chapitre en entier
         function getNumberOfChapters() {
             if (document.getElementById("numberOfChapters").value == "") {

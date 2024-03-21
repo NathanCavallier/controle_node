@@ -5,6 +5,24 @@ export class StoryService {
     constructor() { }
 
     /**
+     * Sauvegarder une image sur le serveur express (uploads) 
+     * et retourner son adresse.
+     * @param {FormData} formData
+     * @return {Promise<String>}
+     */
+    saveImage(formData) {
+        fetch('api/uploads', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            return data;
+        })
+        .catch(error => console.error(error));
+    }
+
+    /**
      * Récupérer toutes les histoires
      * @param {DOM} target
      * @return {Array<Story>}

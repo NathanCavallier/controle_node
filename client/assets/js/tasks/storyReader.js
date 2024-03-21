@@ -8,6 +8,7 @@ let storyImage = document.getElementById("storyImage");
 
 let storyService = new StoryService();
 let _id = window.location.hash.substring(1);
+
 let story = storyService.getStoryById(_id);
 
 story.then((story) => {
