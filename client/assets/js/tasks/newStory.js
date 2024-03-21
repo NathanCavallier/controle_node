@@ -24,16 +24,25 @@ buttonSave.addEventListener('click', async () => {
         return;
     }
 
-    // Vérifier si l'histoire existe déjà
-    let existingStory = newStoryService.getStoryById(newStory.title);
+    let isExistingStory = newStoryService.getStoryById(newStory.title);
 
-    if (existingStory) {
+    if (isExistingStory) {
         alert('Cette histoire existe déjà !');
         return;
     }
 
-    // Enregistrer l'histoire dans la base de données
     let response = newStoryService.createStory(newStory);
+    response.then(() => {
+        newStory.title = '';
+        newStory.author = '';
+        newStory.numberOfChapters = '';
+        newStory.currentChapter = '';
+        newStory.storyContent = '';
+        newStory.storyDescription = '';
+        newStory.storyGenre = '';
+        newStory.releaseYear = '';
+
+    });
 
     if (response.status == 200) {
         window.location.href = '/';

@@ -6,7 +6,7 @@
     <title>Histoires</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="StyleSheet" href="../client/assets/style/style.storyReader.css" />
+<link rel="StyleSheet" href="../assets/style/style.storyReader.css" />
     <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
     <script src="../client/assets/js/listes/liste.stories.js"></script>
 </head>
@@ -40,13 +40,13 @@
             <div class="histoires">Histoires</div>
             <div class="chapitres">Chapitres</div>
             <p class="c-lins-du-soir">Câlins du soir</p>
-            <img class="alice-au-pays-des-merveilles-1951-62942-1200-x-675-1"
+            <img id="storyImage" class="alice-au-pays-des-merveilles-1951-62942-1200-x-675-1"
                 src="../assets/img/alice_au_pays_des_merveilles_1951_62942_1200x675_1.png" alt="" />
             <div class="bouton-accueil"></div>
             <div class="bookNameClass" id="bookName">
                 Alice au pays des merveilles
             </div>
-            <div class="chapterName">Down the rabbit hole</div>
+            <div class="chapterName" id="currentChapter">Down the rabbit hole</div>
             <div class="chapterNbrAndName">
                 Chapitre 1: Down the rabbit hole
             </div>
@@ -56,12 +56,12 @@
                     d="M31.5 53.375L27.6937 50.0709C23.275 46.216 19.6219 42.8907 16.7344 40.0948C13.8469 37.299 11.55 34.7887 9.84375 32.5639C8.1375 30.3408 6.94575 28.2973 6.2685 26.4334C5.59125 24.5695 5.25175 22.6632 5.25 20.7146C5.25 16.7327 6.62813 13.4073 9.38437 10.7386C12.1406 8.06985 15.575 6.73547 19.6875 6.73547C21.9625 6.73547 24.1281 7.20145 26.1844 8.13339C28.2406 9.06533 30.0125 10.3785 31.5 12.073C32.9875 10.3785 34.7594 9.06533 36.8156 8.13339C38.8719 7.20145 41.0375 6.73547 43.3125 6.73547C47.425 6.73547 50.8594 8.06985 53.6156 10.7386C56.3719 13.4073 57.75 16.7327 57.75 20.7146C57.75 22.6632 57.4114 24.5695 56.7341 26.4334C56.0569 28.2973 54.8642 30.3408 53.1562 32.5639C51.45 34.7887 49.1531 37.299 46.2656 40.0948C43.3781 42.8907 39.725 46.216 35.3062 50.0709L31.5 53.375ZM31.5 46.5125C35.7 42.8695 39.1562 39.7458 41.8687 37.1414C44.5812 34.5371 46.725 32.2707 48.3 30.3425C49.875 28.4142 50.9687 26.6977 51.5812 25.1931C52.1937 23.6884 52.5 22.1956 52.5 20.7146C52.5 18.173 51.625 16.0549 49.875 14.3605C48.125 12.666 45.9375 11.8188 43.3125 11.8188C41.2562 11.8188 39.3531 12.3797 37.6031 13.5014C35.8531 14.6231 34.65 16.0532 33.9937 17.7917H29.0062C28.35 16.0549 27.1469 14.6257 25.3969 13.5039C23.6469 12.3822 21.7437 11.8205 19.6875 11.8188C17.0625 11.8188 14.875 12.666 13.125 14.3605C11.375 16.0549 10.5 18.173 10.5 20.7146C10.5 22.1973 10.8062 23.6909 11.4187 25.1956C12.0312 26.7003 13.125 28.4159 14.7 30.3425C16.275 32.2691 18.4187 34.5354 21.1312 37.1414C23.8437 39.7475 27.3 42.8712 31.5 46.5125Z"
                     fill="#B071FF" fill-opacity="0.9" />
             </svg>
-            <svg class="tabler-bookmark-filled" width="55" height="57" viewBox="0 0 55 57" fill="none"
+            <!--<svg class="tabler-bookmark-filled" width="55" height="57" viewBox="0 0 55 57" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M32.0834 4.75C35.1223 4.75 38.0368 6.00111 40.1856 8.22811C42.3345 10.4551 43.5417 13.4756 43.5417 16.625V49.875C43.5418 50.305 43.4292 50.7269 43.216 51.0958C43.0028 51.4646 42.697 51.7666 42.3312 51.9695C41.9654 52.1723 41.5533 52.2684 41.1389 52.2476C40.7245 52.2267 40.3233 52.0896 39.9782 51.851L27.5 43.2297L15.0242 51.851C14.6972 52.0778 14.3193 52.2136 13.927 52.2451C13.5346 52.2767 13.1411 52.203 12.7842 52.0312C12.4273 51.8594 12.1191 51.5952 11.8893 51.2642C11.6595 50.9331 11.5158 50.5463 11.4721 50.141L11.4584 49.875V16.625C11.4584 13.4756 12.6656 10.4551 14.8144 8.22811C16.9633 6.00111 19.8778 4.75 22.9167 4.75H32.0834Z"
                     fill="#B071FF" fill-opacity="0.9" />
-            </svg>
+            </svg>-->
             <svg class="group-24" width="69" height="57" viewBox="0 0 69 57" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="69" height="57" rx="28.5" fill="white" />
