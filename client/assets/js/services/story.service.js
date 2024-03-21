@@ -1,6 +1,4 @@
-import {
-    Story
-} from "../classes/story.class.js"
+import { Story } from "../classes/story.class.js"
 
 
 export class StoryService {
@@ -14,6 +12,7 @@ export class StoryService {
     getAllStories(target) {
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
+        headers.append("Accept", "application/json");
         let url = "api/stories";
         let request = new Request(url, {
             method: "GET",
@@ -25,7 +24,6 @@ export class StoryService {
             .then(stories => {
                 let newTableRow = document.createElement("tr");
                 let stepper = 0;
-
                 stories.forEach((story, index) => {
                     let cell = document.createElement("td");
 
@@ -140,6 +138,8 @@ export class StoryService {
 
                 // Bouton à la dernière cellule
                 newTableRow.lastChild.appendChild(movingButton);
+
+                return stories;
             })
             .catch(error => console.log(error));
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="StyleSheet" href="./client/assets/style/style.home.css" />
-    <script type="module" src="./assets/js/listes/liste.stories.js"></script>
+    <script type="module" src="../client/assets/js/listes/liste.stories.js"></script>
 </head>
 
 <body>
@@ -68,7 +68,8 @@
         <div class="rectangle-1" id="main-group-scroll">
             <!-- Tableau de la liste des histoires (Titre, photo de couverture, bouton 'Like', id de l'histoire) -->
             <table id="storyList">
-                
+
+                <!--
                 <tr>
                     <td>
                         <div class="rectangle-5"></div>
@@ -104,7 +105,7 @@
                                 </defs>
                             </svg>
                         </div>
-                </tr>
+                </tr> -->
 
             </table>
         </div>
@@ -149,7 +150,7 @@
             }
 
             // Fonction pour afficher ou masquer les boutons du menu au survol de la souris
-            function toogleMenuButtons(id) {
+            function toogleMenuButtons(id, isFavorite) {
                 const isFavoriteButton = document.getElementById(id);
                 if (isFavorite) {
                     isFavoriteButton.style.display = 'none';

@@ -1,19 +1,12 @@
-export default function handleDrop(event) {
-    event.preventDefault();
-    const file = event.dataTransfer.files[0];
-    const reader = new FileReader();
-    reader.onload = function (e) {
-        const image = document.createElement('img');
-        image.src = e.target.result;
-        document.getElementById('dropzone').appendChild(image);
-    };
-    reader.readAsDataURL(file);
-}
-
-function handleDragOver(event) {
-    event.preventDefault();
-}
-
-const dropzone = document.getElementById('dropzone');
-dropzone.addEventListener('drop', handleDrop);
-dropzone.addEventListener('dragover', handleDragOver);
+document.getElementById('image-upload').addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+    reader.onloadend = function() {
+        var img = document.createElement('img');
+        img.src = reader.result;
+        document.getElementById('dropzone').appendChild(img);
+    }
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+});

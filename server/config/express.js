@@ -6,7 +6,15 @@ const app = express();
 
 app.use('/client', express.static(path.join(__dirname, '../../client')));
 app.use('/pages', express.static(path.join(__dirname, '../../client/pages')));
+app.use('/assets', express.static(path.join(__dirname, '../../client/assets')));
 app.use(express.json());
+app.use(express.static('/client/assets/js/listes', {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+  }
+}));
 
 
 // si l'url commence par autre chose que /api je reroute vers index.html

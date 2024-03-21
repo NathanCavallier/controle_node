@@ -1,21 +1,20 @@
 import { Story } from "../classes/story.class";
 import { StoryService } from "../services/story.service";
 
-let buttonSave = document.getquerySelector('#enregistrer');
+let buttonSave = document.querySelector('#enregistrer');
 let newStoryService = new StoryService();
 
 buttonSave.addEventListener('click', async () => {
     let newStory = new Story();
-    newStory.title = document.getquerySelector('#title').value;
-    newStory.author = document.getquerySelector('#author').value;
-    newStory.numberOfChapters = document.getquerySelector('#numberOfChapters').value;
-    newStory.currentChapter = document.getquerySelector('#currentChapter').value;
-    newStory.storyContent = document.getquerySelector('#storyContent').value;
-    newStory.storyDescription = document.getquerySelector('#storyDescription').value;
-    newStory.storyGenre = document.getquerySelector('#storyGenre').value;
-    newStory.releaseYear = document.getquerySelector('#releaseYear').value;
-    newStory.imageLink = document.getquerySelector('#imageLink').value;
-    newStory.storyTags = document.querySelector('#storyTags').value;
+    newStory.title = document.querySelector('#title').value;
+    newStory.author = document.querySelector('#author').value;
+    newStory.numberOfChapters = document.querySelector('#numberOfChapters').value;
+    newStory.currentChapter = document.querySelector('#currentChapter').value;
+    newStory.storyContent = document.querySelector('#storyContent').value;
+    newStory.storyDescription = document.querySelector('#storyDescription').value;
+    newStory.storyGenre = document.querySelector('#storyGenre').value;
+    newStory.releaseYear = document.querySelector('#releaseYear').value;
+    newStory.imageLink = document.querySelector('#imageLink').value;
 
     // Vérifier que tous les champs sont remplis
     if (!newStory.title || !newStory.author || !newStory.numberOfChapters ||
