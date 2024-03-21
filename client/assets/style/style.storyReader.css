@@ -57,14 +57,6 @@ background: #E8E8E8; /* Couleur de la poignée */
 }
 
 
-.gravity-ui-trash-bin {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  left: 712px;
-  top: 504px;
-  overflow: visible;
-}
 .rectangle-12 {
   background: #81c050;
   width: 1450px;
@@ -438,23 +430,23 @@ background: #E8E8E8; /* Couleur de la poignée */
   cursor: pointer;
 }
 .vector {
-  width: 3.54%;
-  height: 3.42%;
+  width: 35.4px;
+  height: 34.2px;
   position: absolute;
-  right: 16.81%;
-  left: 79.65%;
-  bottom: 5.47%;
-  top: 91.11%;
+  right: 168.1px;
+  left: 67%;
+  bottom: 54.7px;
+  top: 775px;
   overflow: visible;
 }
 .vector2 {
-  width: 3.54%;
-  height: 3.42%;
+  width: 35.4px;
+  height: 34.2px;
   position: absolute;
-  right: 0.96%;
-  left: 95.49%;
-  bottom: 2.17%;
-  top: 94.42%;
+  right: 0.96px;
+  left: 81%;
+  bottom: 21.7px;
+  top: 805px;
   transform: translate(-51.22px, -34.83px);
   overflow: visible;
 }
