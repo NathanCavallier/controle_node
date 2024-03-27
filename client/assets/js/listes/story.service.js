@@ -2,7 +2,25 @@ import { Story } from "../classes/story.class.js"
 
 
 export class StoryService {
-    constructor() {}
+    constructor() { }
+
+    /**
+     * Sauvegarder une image sur le serveur express (/uploads) 
+     * et retourner son adresse.
+     * @param {FormData} formData
+     * @return {Promise<String>}
+     */
+    saveImage(formData) {
+        fetch('api/uploads', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text())
+            .then(data => {
+                return data;
+            })
+            .catch(error => console.error(error));
+    }
 
     /**
      * Récupérer toutes les histoires
@@ -20,11 +38,15 @@ export class StoryService {
         });
 
         fetch(request)
-            .then(response => response.json())
-            .then(stories => {
+            .then(response => () => {
+                if (response.ok) {
+                    return response.json();
+                }
+            })
+            .then((stories) => {
                 let newTableRow = document.createElement("tr");
                 let stepper = 0;
-                stories.forEach((story, index) => {
+                Object.values(stories).forEach((story, index) => {
                     let cell = document.createElement("td");
 
                     let rectangle_5 = document.createElement("div");
@@ -35,7 +57,7 @@ export class StoryService {
                     title.className = "alice-au-pays-des-merveilles";
 
                     let linkToStoryReaderPage = document.createElement("a");
-                    linkToStoryReaderPage.href = `./pages/storyRreader.html#${story.id}`;
+                    linkToStoryReaderPage.href = `../../../pages/storyReader.html#${story.id}`;
                     linkToStoryReaderPage.appendChild(title);
 
                     let image = document.createElement("img");
@@ -118,8 +140,7 @@ export class StoryService {
                         newTableRow = document.createElement("tr");
                         stepper = 0;
                     }
-                });
-
+                })
                 // Bouton (+) pour ajouter une nouvelle histoire, se déplace toujours à la dernière place de la grille
                 let movingButton = document.createElement("div");/*
                 movingButton.innerHTML = `
@@ -147,11 +168,12 @@ export class StoryService {
     }
 
     /**
-     * Récupérer toutes les histoires favorites
+     * Récupérer les histoires en fonction du statut
      * @param {DOM} target
+     * @param {String} status
      * @return {Array<Story>}
      */
-    getAllFavoriteStories(target) {
+    getAllStoriesByStatus(target, status) {
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
         let url = "api/stories";
@@ -165,7 +187,7 @@ export class StoryService {
             .then(response => response.json())
             .then((data) => {
                 data.forEach((story) => {
-                    if (story.isFavorite) {
+                    if (story[status]) {
                         stories.push(story);
                     }
                 });
@@ -173,66 +195,6 @@ export class StoryService {
             })
             .catch(error => console.log(error));
     }
-
-
-    /**
-     * Récupérer les histoires déjà lues (Historique)
-     * @param {DOM} target
-     * @return {Array<Story>}
-     * 
-     */
-     getAllReadStories(target) {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        let url = "api/stories";
-        let request = new Request(url, {
-            method: "GET",
-            headers: headers
-        });
-        let stories = [];
-
-        fetch(request)
-            .then(response => response.json())
-            .then((data) => {
-                data.forEach((story) => {
-                    if (story.isHistorique) {
-                        stories.push(story);
-                    }
-                });
-                this.displayStories(stories, target);
-            })
-            .catch(error => console.log(error));
-     }
-
-     /**
-     * Récupérer les histoires mise à la corbeille
-     * @param {DOM} target
-     * @return {Array<Story>}
-     */
-     getAllTrashStories(target) {
-        let headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        let url = "api/stories";
-        let request = new Request(url, {
-            method: "GET",
-            headers: headers
-        });
-        let stories = [];
-
-        fetch(request)
-            .then(response => response.json())
-            .then((data) => {
-                data.forEach((story) => {
-                    if (story.isArchive) {
-                        stories.push(story);
-                    }
-                });
-                this.displayStories(stories, target);
-            })
-            .catch(error => console.log(error));
-     }
-     
-     
 
     /**
      * Récupérer une histoire par son titre (title)
@@ -256,24 +218,15 @@ export class StoryService {
                     story.id,
                     story.title,
                     story.author,
-                    story.numberOfChapters,
                     story.currentChapter,
+                    story.storyContent,
                     story.storyDescription,
                     story.storyGenre,
                     story.releaseYear,
                     story.imageLink,
-                    story.storyTags,
-                    story.listOfChapters,
-                    story.listOfChapters,
                     story.linkToStoryReaderPage,
-                    story.listOfChapter,
 
                     story.isFavorite,
-                    story.isBookmark,
-                    story.isHitorique,
-                    story.isArchive,
-                    story.isStarred,
-                    story.isFinished
                 );
                 return requestedStory;
             })

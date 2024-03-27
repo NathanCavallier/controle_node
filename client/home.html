@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="StyleSheet" href="./client/assets/style/style.home.css" />
-    <script type="module" src="../client/assets/js/listes/liste.stories.js"></script>
+    <script type="module" src="./client/assets/js/listes/liste.stories.js"></script>
 </head>
 
 <body>
@@ -36,9 +36,7 @@
             </svg>
         </div>
 
-        <div onclick='window.location.href="./pages/lullaby.html"' class="box-clicable"
-            onmouseenter='toogleMenuButtons("changeLullabyButton")'
-            onmouseleave='toogleMenuButtons("changeLullabyButton")'>
+        <div onclick='window.location.href="./pages/lullaby.html"' class="box-clicable">
             <div class="bouton-berceuses" id="buttonLullabyColor"></div>
             <div class="berceuses" id="changeLullabyTextColor">Berceuses</div>
             <div class="mingcute-music-3-line">
@@ -69,7 +67,7 @@
             <!-- Tableau de la liste des histoires (Titre, photo de couverture, bouton 'Like', id de l'histoire) -->
             <table id="storyList">
 
-                <!--
+                
                 <tr>
                     <td>
                         <div class="rectangle-5"></div>
@@ -105,7 +103,19 @@
                                 </defs>
                             </svg>
                         </div>
-                </tr> -->
+                        <div onclick='window.location.href="./pages/newStory.html"' class="box-clicable">
+                            <svg class="group-48" width="255" height="207" viewBox="0 0 255 207" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="253" height="205" rx="30" stroke="grey" stroke-opacity="0.25"
+                                    stroke-width="2" />
+                                <rect x="1" y="1" width="253" height="205" rx="30" stroke="white" stroke-opacity="0.25"
+                                    stroke-width="2" id="showMe" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M126.984 36.2693C117.912 36.2693 110.558 43.6236 110.558 52.6957V80.6966H83.7235C74.4751 80.6966 66.9778 88.1939 66.9778 97.4423C66.9778 106.691 74.4751 114.188 83.7235 114.188H110.558V142.189C110.558 151.261 117.912 158.615 126.984 158.615C136.056 158.615 143.411 151.261 143.411 142.189V114.188H170.245C179.494 114.188 186.991 106.691 186.991 97.4423C186.991 88.1939 179.494 80.6966 170.245 80.6966H143.411V52.6957C143.411 43.6236 136.056 36.2693 126.984 36.2693Z"
+                                    fill="#ffffff" fill-opacity="0.66" />
+                            </svg>
+                        </div>
+                </tr> 
 
             </table>
         </div>
@@ -144,26 +154,6 @@
         </header>
         </article>
         <script>
-            // Fonction 
-            window.onload = function () {
-                document.getElementById('main-group-scroll').scrollTop = 0;
-            }
-
-            // Fonction pour afficher ou masquer les boutons du menu au survol de la souris
-            function toogleMenuButtons(id, isFavorite) {
-                const isFavoriteButton = document.getElementById(id);
-                if (isFavorite) {
-                    isFavoriteButton.style.display = 'none';
-                    isFavorite = false;
-                    document.getElementById('changeLullabyTextColor').style.color = 'white';
-                    document.getElementById('buttonLullabyColor').style.backgroundColor = '#B071FF';
-                } else {
-                    isFavoriteButton.style.display = 'block';
-                    isFavorite = true;
-                    document.getElementById('changeLullabyTextColor').style.color = '#B071FF';
-                    document.getElementById('buttonLullabyColor').style.backgroundColor = 'white';
-                }
-            }
             // Fonction pour afficher ou masquer le bouton 'Ajouter une nouvelle histoire' au survol de la souris
             function toogleAddNewStoryButton() {
                 const addNewStoryButton = document.getElementById('showMe');

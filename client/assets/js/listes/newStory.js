@@ -1,8 +1,22 @@
 import { Story } from "../classes/story.class";
-import { StoryService } from "../services/story.service";
+import { StoryService } from "./story.service";
 
 let buttonSave = document.querySelector('#enregistrer');
+let imageInput = document.querySelector('#upload-image');
 let newStoryService = new StoryService();
+let formData = new FormData();
+
+
+imageInput.addEventListener('change', () => {
+    formData.append('image', imageInput.files[0]);
+    newStoryService.saveImage(formData)
+        .then((response) => {
+        document.querySelector('#uploaded-image').value = response;
+        }) 
+        .catch((error) => {
+            console.log(error);
+        });
+});
 
 buttonSave.addEventListener('click', async () => {
     let newStory = new Story();
@@ -14,7 +28,7 @@ buttonSave.addEventListener('click', async () => {
     newStory.storyDescription = document.querySelector('#storyDescription').value;
     newStory.storyGenre = document.querySelector('#storyGenre').value;
     newStory.releaseYear = document.querySelector('#releaseYear').value;
-    newStory.imageLink = document.querySelector('#imageLink').value;
+    newStory.imageLink = document.querySelector('#uploaded-image').value;
 
     // Vérifier que tous les champs sont remplis
     if (!newStory.title || !newStory.author || !newStory.numberOfChapters ||
@@ -24,16 +38,25 @@ buttonSave.addEventListener('click', async () => {
         return;
     }
 
-    // Vérifier si l'histoire existe déjà
-    let existingStory = newStoryService.getStoryById(newStory.title);
+    let isExistingStory = newStoryService.getStoryById(newStory.title);
 
-    if (existingStory) {
+    if (isExistingStory) {
         alert('Cette histoire existe déjà !');
         return;
     }
 
-    // Enregistrer l'histoire dans la base de données
     let response = newStoryService.createStory(newStory);
+    response.then(() => {
+        newStory.title = '';
+        newStory.author = '';
+        newStory.numberOfChapters = '';
+        newStory.currentChapter = '';
+        newStory.storyContent = '';
+        newStory.storyDescription = '';
+        newStory.storyGenre = '';
+        newStory.releaseYear = '';
+
+    });
 
     if (response.status == 200) {
         window.location.href = '/';
